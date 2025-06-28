@@ -1,0 +1,322 @@
+@media (max-width:801px) {
+    .App {
+        display: initial;
+    }
+    .App-header {
+        min-height: 100vh;
+        .header-con {
+            justify-content: unset;
+            padding-top: 16vh;
+        }
+        h1{
+            font-size: 4em;
+            text-shadow: 1px 1px #1b271d;
+        }
+        h2 {
+            font-size: 2.8em;
+            text-shadow: -3px 3px 0px #0b170d;
+        }
+        p {
+            font-size: 1.2em;
+            text-shadow: 0px 2px 1px #1b271d;
+        }
+    }
+    .img {
+        animation-range: cover 0% cover 100%;
+        animation: the-animation linear;
+        animation-timeline: view();
+        animation-iteration-count: 1;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main-img-container {
+        height: 90vh;
+
+        .overlay {
+            height: 100%;
+            background-image: url("/public/images/overlay.png");
+            width: 100%;
+            background-size: 100% 100%;
+            z-index: 10;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .main-img {
+        background-image: url("https://i.pinimg.com/736x/b8/2c/26/b82c26b2f3a493044ea1e421a4f5936d.jpg");
+        image-rendering: pixilated;
+        width: 100%;
+        height: 100%;
+        background-size: 900px;
+        --toBackgroundSize: 100%;
+        align-self: center;
+        z-index: 1;
+        object-position: 50% 50%;
+    }
+    .contain1 {
+        padding: 0 0 50px 0;
+        overflow: hidden;
+        position: relative;
+        &::before{
+            content: '';
+            background-image: url("/public/images/nature.png");
+            width: 93%;
+            background-size: 100% 100%;
+            z-index: 10;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 55px;
+            left: -135px;
+            height: 15%;
+            transform: rotate(331deg);
+        }
+        &::after{
+            content: '';
+            background-image: url("/public/images/nature.png");
+            width: 93%;
+            background-size: 100% 100%;
+            z-index: 10;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 55px;
+            right: -135px;
+            height: 15%;
+            transform: rotate(155deg);
+        }
+        .text-cont {
+            padding: 0 45px 50px 45px;
+            h2{
+                text-align: center;
+                font-family: 'Parisienne';
+                font-size: 9vh;
+                color: #b28a34;
+            }
+            p {
+                font-family: 'Avenir Light';
+                font-size: 1.2em;
+                text-align: center;
+                &.date {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: row;
+                    font-size: 2.8em;
+                    font-family: 'Fraunces';
+                    line-height: 0;
+                    margin-bottom: 50px;
+                }
+                .disc {
+                    position: relative;
+                    list-style-type: disc;
+                    font-size: 20px;
+                    height: 13px;
+                    width: 13px;
+                    background-color: #f3f1c4;
+                    border-radius: 25px;
+                }
+            }
+            .line {
+                height: 7vh;
+                width: 1px;
+                background-color: #f3f1c4;
+                margin: 20px auto;
+            }
+            .wed-place {
+                font-family: 'Avenir Light';
+                font-size: 1.3em;
+                font-weight: light;
+                color: #f3f1c4;
+            }
+            img.cathedral {
+                margin-top: 7vh;
+                height: 15vh;
+                width: auto;
+            }
+        }
+        .img-slider {
+            padding: 50px 0;
+            .slick-list {
+                img {
+                    height: 70vh;
+                    width: 100%;
+                }
+            }
+            .slick-dots {
+                position: relative !important;
+                bottom: 45vh !important;
+                display: flex !important;
+                justify-content: right;
+                align-items: end;
+                flex-direction: column;
+                padding-right: 30px;
+            }
+        }
+        .wedding-details {
+            padding: 100px 50px 50px 50px;
+            h2{
+                text-align: center;
+                font-family: 'Parisienne';
+                font-size: 9.8vh;
+                color: #b28a34;
+                &.normal-f {
+                    font-family: 'Avenir Light';
+                    font-size: 6vh;
+                    line-height: 0;
+                    text-align: left;
+                    color: #f3f1c4;
+                    margin-bottom: 25px;
+                }
+            }
+            .wedding-program {
+                padding: 50px 0;
+                position: relative;
+                .program-list {
+                    padding: 0;
+                    list-style-type: none;
+                    position: relative;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        margin-bottom: 30px;
+                        span {
+                            position: relative;
+                            width: 16vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            border-right: 1px solid #b28a34;
+                            padding-right: 10px;
+                            p {
+                                font-size: 18px;
+                                margin: 0 ;
+                                font-family: 'Avenir Light';
+                            }
+                        }
+                        p.desc {
+                            padding: 15px 0 0 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .the-details {
+            padding: 0 50px 0 50px;
+            text-align: left;
+            position: relative;
+            &::before{
+                content: '';
+                background-image: url("/public/images/nature.png");
+                width: 100%;
+                background-size: 100% 100%;
+                z-index: 10;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -63px;
+                right: -115px;
+                height: 50%;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+            
+            h2{
+                text-align: left;
+                font-family: 'Parisienne';
+                font-size: 9.8vh;
+                color: #b28a34;
+                &.normal-f {
+                    font-family: 'Avenir Light';
+                    font-size: 6vh;
+                    line-height: 0;
+                    text-align: center;
+                    color: #f3f1c4;
+                    margin-bottom: 70px;
+                }
+            }
+            .two {
+                text-align: right;
+                padding-top: 10px;
+            }
+        }
+    }
+    .contain2 {
+        padding: 0 0 100px 0;
+        h2 {
+            text-shadow: 1px 1px #1b271d;
+            text-align: left;
+            padding-left: 50px;
+            padding-bottom: 20px;
+        }
+        p {
+            padding: 0 50px;
+            text-align: left;
+        }
+        iframe {
+            border: none;
+            overflow: hidden;
+            height: 30vh;
+            width: 100%;
+        }
+    }
+    .contain3 {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        h2 {
+            text-shadow: 1px 1px #1b271d;
+            padding-left: 0 50px;
+        }
+        p {
+            padding: 0 50px;
+        }
+        .img-qr-code {
+            height: 36vh;
+            width: auto;
+            padding:0 50px 30px 50px;
+        }
+    }
+    .contain4 {
+        position: relative;
+        padding: 50px 50px;
+        min-height: 100vh;
+        &::after{
+            content: '';
+            background-image: url("/public/images/shape.png");
+            width: 59%;
+            background-size: 100% 100%;
+            z-index: 1;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 107px;
+            left: -63px;
+            height: 30vh;
+            transform: rotate(64deg);
+        }
+        h1 {
+            &.rsvp {
+                font-family: 'Fraunces';
+                font-size: 17em;
+                color: #f3f1c4;
+                line-height: 0.8;
+                text-align: center;
+            }
+        }
+        .rsvp-date {
+            font-size: 20px;
+            padding: 50px 0;
+        }
+        a.lnk-rsvp{
+            padding: 12px 60px;
+            background-color: #f3f1c4;
+            color: #1b271d;
+            font-size: 1.6em;
+            position: relative;
+            border-radius: 29px;
+            z-index: 10;
+        }
+    }
+}

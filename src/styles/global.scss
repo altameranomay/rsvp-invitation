@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Melinda script';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  src: local('Melinda script'), url('/public/font/Melinda script.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Avenir Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Light'), url('//font/Avenir Light.ttf') format('ttf');
+}
+a {
+  color: #f3f1c4;
+  &:active, &:hover {
+    color: #f3f1c4;
+  }
+}
+a,p {
+  font-family: 'Avenir Light';
+  font-weight: light;
+  font-size: 16px;
+  color: #f3f1c4;
+}
+
+h2,h5 {
+  font-family: 'Fraunces';
+  font-weight: light;
+  color: #f3f1c4;
+}
+h1 {
+  font-family: 'Parisienne';
+  font-weight: normal;
+}
+.gold {
+  color: #b28a34;
+}
