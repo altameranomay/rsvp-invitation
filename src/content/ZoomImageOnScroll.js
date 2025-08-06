@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const images = [
-  'https://raw.githubusercontent.com/altameranomay/rsvp-invitation/refs/heads/main/public/images/prenup-edited-221.JPG',
+  'https://raw.githubusercontent.com/altameranomay/rsvp-invitation/refs/heads/main/public/images/prenup-edited-083.JPG',
 ];
 
 const ZoomImageOnScroll = () => {
