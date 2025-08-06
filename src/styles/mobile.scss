@@ -1,4 +1,40 @@
 @media (max-width:801px) {
+    body {
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+    .page-wrapper {
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+    .image-container  {
+        height: 90vh;
+        .zoom-image {
+            height: 100vh;
+            width: auto;
+        }
+        &.-right {
+            padding-right: 30vh;
+        }
+    }
+    .RSVP-container {
+        .rsvp-text-container {
+            p.separator {
+                &::before {
+                    left: 18%;
+                }
+                &::after {
+                    right: 18%;
+                }
+            }
+            p.desc {
+                padding: 0 50px;
+            }
+        }
+    }
+}
+/**
+@media (max-width:801px) {
     .App {
         display: initial;
     }
@@ -319,4 +355,4 @@
             z-index: 10;
         }
     }
-}
+}*/
