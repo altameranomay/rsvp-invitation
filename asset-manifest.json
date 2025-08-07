@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rsvp-invitation/static/css/main.7b614136.css",
-    "main.js": "/rsvp-invitation/static/js/main.f289b610.js",
+    "main.js": "/rsvp-invitation/static/js/main.df61c985.js",
     "static/media/Woodley.otf": "/rsvp-invitation/static/media/Woodley.ab9a55312c8c33ce6db8.otf",
     "static/media/Woodley.ttf": "/rsvp-invitation/static/media/Woodley.32f6b04a4ef287eb71c1.ttf",
     "static/media/Melinda script.ttf": "/rsvp-invitation/static/media/Melinda script.b3d96c255cc11d716f2b.ttf",
@@ -9,10 +9,10 @@
     "static/media/Woodley.woff2": "/rsvp-invitation/static/media/Woodley.e31b61d3f3a72fac211c.woff2",
     "index.html": "/rsvp-invitation/index.html",
     "main.7b614136.css.map": "/rsvp-invitation/static/css/main.7b614136.css.map",
-    "main.f289b610.js.map": "/rsvp-invitation/static/js/main.f289b610.js.map"
+    "main.df61c985.js.map": "/rsvp-invitation/static/js/main.df61c985.js.map"
   },
   "entrypoints": [
     "static/css/main.7b614136.css",
-    "static/js/main.f289b610.js"
+    "static/js/main.df61c985.js"
   ]
 }
