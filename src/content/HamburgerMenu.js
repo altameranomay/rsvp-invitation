@@ -11,7 +11,7 @@ const HamburgerMenu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Hamburger icon */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/">RSVP</Nav.Link>
+            <Nav.Link href="#" onclick="window.location.reload(true);">RSVP</Nav.Link>
             <Nav.Link href="/">OUR STORY</Nav.Link>
             
             <Nav.Link href="/">LOCATION</Nav.Link>
