@@ -1,14 +1,13 @@
-import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const imgLogo = '/images/Jefbel_logo.png';
+const imgLogo = '/images/wedding-logo.png'
 
 const HamburgerMenu = () => {
   return (
     <Navbar id="navbar" expand="lg" bg="light" variant="light">
       <Container>
         <Navbar.Brand  href="#" onclick="window.location.reload(true);" className='-mobile'>
-          {/* <img src={process.env.PUBLIC_URL + imgLogo} alt="wedding logo"/> */}
+          <img src={process.env.PUBLIC_URL + imgLogo} alt="wedding logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Hamburger icon */}
         <Navbar.Collapse id="basic-navbar-nav">
