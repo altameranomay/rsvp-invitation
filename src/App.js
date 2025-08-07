@@ -9,7 +9,7 @@ import Intro from './content/Intro';
 import OurStory from './content/OurStory';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
-import Location from './content/Location';
+// import Location from './content/Location';
 
 function App() {
   AOS.init();
@@ -30,7 +30,7 @@ function App() {
         <OurStory/>
         <Gallery/>
         <Gallery1/>
-        <Location/>
+        {/* <Location/> */}
         {/* <Header/> */}
         <Routes>
           <Route path="/" exact />
