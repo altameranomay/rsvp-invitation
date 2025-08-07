@@ -3,7 +3,13 @@ import AOS from 'aos';
 import './App.css';
 import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom"
 import ZoomImageOnScroll from './content/ZoomImageOnScroll';
-import Header from './content/Header';
+// import Header from './content/Header';
+import HamburgerMenu from './content/HamburgerMenu';
+import Intro from './content/Intro';
+import OurStory from './content/OurStory';
+import Gallery from './content/Gallery';
+import Gallery1 from './content/Gallery1';
+import Location from './content/Location';
 
 function App() {
   AOS.init();
@@ -19,7 +25,13 @@ function App() {
     <div className="page-wrapper">
       <Router>
         <ZoomImageOnScroll/>
-        <Header/>
+        <HamburgerMenu/>
+        <Intro/>
+        <OurStory/>
+        <Gallery/>
+        <Gallery1/>
+        <Location/>
+        {/* <Header/> */}
         <Routes>
           <Route path="/" exact />
           <Route path="/product/productId" exact />

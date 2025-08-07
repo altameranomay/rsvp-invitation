@@ -1,10 +1,10 @@
 @media (max-width:801px) {
     body {
-        overflow-x: hidden !important;
+        /**overflow-x: hidden !important;*/
         width: 100%;
     }
     .page-wrapper {
-        overflow-x: hidden !important;
+        /**overflow-x: hidden !important;*/
         width: 100%;
     }
     .image-container  {
@@ -14,21 +14,92 @@
             width: auto;
         }
         &.-right {
-            padding-right: 30vh;
+            padding-right: 0;
         }
     }
-    .RSVP-container {
-        .rsvp-text-container {
-            p.separator {
-                &::before {
-                    left: 18%;
-                }
-                &::after {
-                    right: 18%;
+    .navbar-light {
+        align-items: flex-start;
+        .navbar-toggler-icon {
+            background-image: url("/public/images/hamburger.png");;
+        }
+        .-mobile {
+            display: block;
+            img {
+                height: 55px;
+            }
+        }
+        .navbar-nav {
+            align-items: flex-start;
+            .nav-link {
+                font-family: "Montserrat", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 12px;
+                color: #f3f1c4;
+                padding: 24px 0 24px 24px;
+                width: 100%;
+            }
+            .navbar-brand {
+                display: none !important;
+            }
+        }
+    }
+    #navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+    }
+    .intro {
+        &::after {
+            content: none;
+        }
+        &.image-container {
+            height: 100vh;
+        }
+        .img-oblique-container {
+            top: 110px;
+            height: 70vh;
+            width: 40vh;
+        }
+        .intro-text {
+            top: 7vh;
+            padding: 0 3vh;
+            height: 95vh;
+            h2 {
+                color: #f4fcff;
+                font-size: 20px;
+                &:nth-child(3) {
+                    font-size: 16px;
                 }
             }
-            p.desc {
-                padding: 0 50px;
+        }
+    }
+    .our-story-container {
+        padding: 80px 30px;
+        text-align: center;
+        h5 {
+            margin-bottom: 40px;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+    .location-container {
+        padding: 0;
+        .reception-container {
+            flex-direction: column;
+            &:nth-child(2) {
+                flex-direction: column;
+                .reception-text {
+                    padding: 50px !important;
+                }
+            }
+            .reception-text {
+                padding: 50px !important;
             }
         }
     }

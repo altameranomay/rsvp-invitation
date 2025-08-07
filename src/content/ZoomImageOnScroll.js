@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const images = [
-  'https://raw.githubusercontent.com/altameranomay/rsvp-invitation/refs/heads/main/public/images/prenup-edited-083.JPG',
+  '/images/prenup-grizzle.png',
 ];
 
 const ZoomImageOnScroll = () => {
@@ -34,7 +34,7 @@ const ZoomImageOnScroll = () => {
   }, []);
 
   return (
-      <div className="image-container -right">
+      <div className="image-container -right head">
         {/* <div className='text-container'>
           <h1 className='text-title'>You're <div className='separator'>Cordially</div> Invited</h1>
         </div> */}
@@ -43,16 +43,16 @@ const ZoomImageOnScroll = () => {
           <img
             key={index}
             ref={(el) => (imageRefs.current[index] = el)}
-            src={src}
+            src={process.env.PUBLIC_URL + src}
             alt={`Zoom Image ${index}`}
             className="zoom-image"
             style={{ transform: `scale(${scales[index]})` }}
           />
         ))}
-        <div className='image-btn-container'>
+        {/* <div className='image-btn-container'>
           <p>RSVP by September 25 2025</p>
           <a href="/">RSVP</a>
-        </div>
+        </div> */}
       </div>
   );
 };
