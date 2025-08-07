@@ -181,7 +181,7 @@ body {
             font-style: normal;
             font-size: 10px;
             color: #f3f1c4;
-            &:hover, &:active, &:visited, &:focus  {
+            &:hover, &:active, &:visited, &:focus, &.active  {
                 color: #9f9d78;
             }
         }
