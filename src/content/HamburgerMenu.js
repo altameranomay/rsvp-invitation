@@ -7,8 +7,8 @@ const HamburgerMenu = () => {
   return (
     <Navbar id="navbar" expand="lg" bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="/" className='-mobile'>
-          <img src={process.env.PUBLIC_URL + imgLogo} alt="wedding logo"/>
+        <Navbar.Brand  href="#" onclick="window.location.reload(true);" className='-mobile'>
+          {/* <img src={process.env.PUBLIC_URL + imgLogo} alt="wedding logo"/> */}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Hamburger icon */}
         <Navbar.Collapse id="basic-navbar-nav">
