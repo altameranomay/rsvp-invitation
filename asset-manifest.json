@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/rsvp-invitation/static/css/main.d1575cb7.css",
-    "main.js": "/rsvp-invitation/static/js/main.6b109b06.js",
-    "static/js/453.1bc472d2.chunk.js": "/rsvp-invitation/static/js/453.1bc472d2.chunk.js",
-    "static/media/shape.png": "/rsvp-invitation/static/media/shape.50a197b92892d98d7ded.png",
-    "static/media/nature.png": "/rsvp-invitation/static/media/nature.6565cae0e90e064de41e.png",
+    "main.css": "/rsvp-invitation/static/css/main.be614b36.css",
+    "main.js": "/rsvp-invitation/static/js/main.473a73f1.js",
+    "static/media/Woodley.otf": "/rsvp-invitation/static/media/Woodley.ab9a55312c8c33ce6db8.otf",
+    "static/media/Woodley.ttf": "/rsvp-invitation/static/media/Woodley.32f6b04a4ef287eb71c1.ttf",
     "static/media/Melinda script.ttf": "/rsvp-invitation/static/media/Melinda script.b3d96c255cc11d716f2b.ttf",
-    "static/media/overlay.png": "/rsvp-invitation/static/media/overlay.9aa59981dad91931ca5a.png",
+    "static/media/Woodley.woff": "/rsvp-invitation/static/media/Woodley.4c7cf0b76c55c90b4a0c.woff",
+    "static/media/Woodley.woff2": "/rsvp-invitation/static/media/Woodley.e31b61d3f3a72fac211c.woff2",
     "index.html": "/rsvp-invitation/index.html",
-    "main.d1575cb7.css.map": "/rsvp-invitation/static/css/main.d1575cb7.css.map",
-    "main.6b109b06.js.map": "/rsvp-invitation/static/js/main.6b109b06.js.map",
-    "453.1bc472d2.chunk.js.map": "/rsvp-invitation/static/js/453.1bc472d2.chunk.js.map"
+    "main.be614b36.css.map": "/rsvp-invitation/static/css/main.be614b36.css.map",
+    "main.473a73f1.js.map": "/rsvp-invitation/static/js/main.473a73f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1575cb7.css",
-    "static/js/main.6b109b06.js"
+    "static/css/main.be614b36.css",
+    "static/js/main.473a73f1.js"
   ]
 }
