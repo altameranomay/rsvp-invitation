@@ -10,7 +10,7 @@ import Intro from './content/Intro';
 import OurStory from './content/OurStory';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
-// import Location from './content/Location';
+import CountdownTimer from './content/CountdownTimer';
 
 function App() {
   AOS.init();
@@ -22,6 +22,7 @@ function App() {
         <HamburgerMenu/>
         <Intro/>
         <OurStory/>
+        <CountdownTimer/>
         <Gallery/>
         <Gallery1/>
         <Routes>

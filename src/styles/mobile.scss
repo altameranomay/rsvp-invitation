@@ -103,6 +103,33 @@
             }
         }
     }
+    .countdown-container {
+        .spn-save-date {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 35px;
+                left: -60px;
+                width: 50px;
+                height: 1px;
+                background-color: #d0a146;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 35px;
+                right: -60px;
+                width: 50px;
+                height: 1px;
+                background-color: #d0a146;
+            }
+            .save-date {
+                height: 70px !important;
+            }
+        }
+
+
+    }
 }
 /**
 @media (max-width:801px) {
