@@ -6,6 +6,7 @@ const images = [
 
 
 const Intro = () => {
+  
   const imageRefs = useRef([]);
   const [scales, setScales] = useState(images.map(() => 1));
 
@@ -35,7 +36,7 @@ const Intro = () => {
   }, []);
 
   return (
-      <div className="intro image-container -right">
+      <div className="intro image-container -right" id='our-story'>
         {/* <div className='text-container'>
           <h1 className='text-title'>You're <div className='separator'>Cordially</div> Invited</h1>
         </div> */}

@@ -13,7 +13,7 @@ function Gallery() {
     cssEase: "linear"
   };
   return (
-    <div className="slider-container">
+    <div className="slider-container" id="gallery">
       <Slider {...settings}>
         <div className="img-slider-cont">
           <img alt='gallery' src={process.env.PUBLIC_URL + '/images/Jeffxbel-24.jpg'}/>
