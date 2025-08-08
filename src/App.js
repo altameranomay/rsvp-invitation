@@ -8,9 +8,10 @@ import Header from './content/Header';
 import HamburgerMenu from './content/HamburgerMenu';
 import Intro from './content/Intro';
 import OurStory from './content/OurStory';
+import CountdownTimer from './content/CountdownTimer';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
-import CountdownTimer from './content/CountdownTimer';
+import Mpplayer from './content/Mpplayer';
 
 function App() {
   AOS.init();
@@ -25,6 +26,7 @@ function App() {
         <CountdownTimer/>
         <Gallery/>
         <Gallery1/>
+        <Mpplayer/>
         <Routes>
           <Route path="/" exact />
           <Route path="/product/productId" exact />

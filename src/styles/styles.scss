@@ -415,3 +415,54 @@ body {
         }
     }
 }
+.mp3-container {
+    max-width: 400px;
+    margin: 100px auto;
+    h3 {
+        font-family: 'Antic Didone';
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        font-size: 40px;
+        color: #0d1b21;
+    }
+    p {
+        font-family: 'Antic Didone';
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        font-size: 16px;
+        color: #0d1b21;
+    }
+}
+.wedding-mp3 {
+    margin: 0 auto;
+    max-width: 300px;
+    box-shadow: 0 0 0 0 !important;
+    background-color: transparent !important;
+    .rhap_current-time,
+    .rhap_time {
+        font-family: 'Antic Didone';
+        font-weight: 600;
+        font-style: normal;
+    }
+    .rhap_progress-bar,
+    .rhap_progress-indicator,
+    .rhap_progress-filled,
+    .rhap_download-progress,
+    .rhap_volume-indicator {
+        background-color: #0d1b21 !important;
+    }
+    .rhap_repeat-button,
+    .rhap_main-controls-button,
+    .rhap_button-clear {
+        color: #0d1b21;
+    }
+    .rhap_additional-controls,
+    .rhap_volume-controls {
+        display: none;
+    }
+    .rhap_main-controls {
+        margin: 0 auto;
+    }
+}

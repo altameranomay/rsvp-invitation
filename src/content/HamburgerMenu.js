@@ -18,7 +18,7 @@ const HamburgerMenu = () => {
             <Nav.Link href="#" onClick={() => document.getElementById("gallery").scrollIntoView({ behavior: "smooth" }) }>GALLERY</Nav.Link>
 
             <Navbar.Brand  href="#" onclick="window.location.reload(true);">
-              <img src={process.env.PUBLIC_URL + imgLogo} alt="jeffbell logo"/>
+              <img src={process.env.PUBLIC_URL + imgLogo} alt="wedding "/>
             </Navbar.Brand>
 
             <Nav.Link href="#" onclick="window.location.reload(true);">ITINERARY</Nav.Link>
