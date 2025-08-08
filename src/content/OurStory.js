@@ -1,6 +1,6 @@
 const OurStory = () => {
   return (
-        <div className="our-story-container">
+    <div className="our-story-container">
             <h1>The Isaiah 60:22 Story</h1>
             <h5>God's Ordain</h5>
 
