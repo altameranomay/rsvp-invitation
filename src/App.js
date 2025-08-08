@@ -12,6 +12,7 @@ import CountdownTimer from './content/CountdownTimer';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
 import Mpplayer from './content/Mpplayer';
+import Location from './content/Location';
 
 function App() {
   AOS.init();
@@ -27,6 +28,7 @@ function App() {
         <Gallery/>
         <Gallery1/>
         <Mpplayer/>
+        <Location/>
         <Routes>
           <Route path="/" exact />
           <Route path="/product/productId" exact />

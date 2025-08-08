@@ -21,8 +21,8 @@ const HamburgerMenu = () => {
               <img src={process.env.PUBLIC_URL + imgLogo} alt="wedding "/>
             </Navbar.Brand>
 
-            <Nav.Link href="#" onclick="window.location.reload(true);">ITINERARY</Nav.Link>
             <Nav.Link href="#" onclick="window.location.reload(true);">GIFT</Nav.Link>
+            <Nav.Link href="#" onclick="window.location.reload(true);">ITINERARY</Nav.Link>
             <Nav.Link href="#" onclick="window.location.reload(true);">DRESS CODE</Nav.Link>
 
           </Nav>

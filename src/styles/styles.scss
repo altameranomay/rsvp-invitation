@@ -280,15 +280,13 @@ body {
     }
 }
 .location-container {
-    padding: 50px;
-    background-color:#0d1b21;
     .reception-container {
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: row;
         iframe {
-            max-width: 450px;
+            max-width: 100%;
             border:0;
         }
         &:nth-child(2) {

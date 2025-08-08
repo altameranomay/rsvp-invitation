@@ -16,6 +16,9 @@ function Gallery() {
     <div className="slider-container" id="gallery">
       <Slider {...settings}>
         <div className="img-slider-cont">
+          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-381.png'}/>
+        </div>
+        <div className="img-slider-cont">
           <img alt='gallery' src={process.env.PUBLIC_URL + '/images/Jeffxbel-24.jpg'}/>
         </div>
         <div className="img-slider-cont">
@@ -37,7 +40,7 @@ function Gallery() {
           <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-083.JPG'}/>
         </div>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-198.JPG'}/>
+          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-204.png'}/>
         </div>
       </Slider>
     </div>
