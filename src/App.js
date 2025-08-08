@@ -24,7 +24,6 @@ function App() {
         <OurStory/>
         <Gallery/>
         <Gallery1/>
-        {/* <Location/> */}
         <Routes>
           <Route path="/" exact />
           <Route path="/product/productId" exact />

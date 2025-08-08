@@ -12,7 +12,7 @@ const HamburgerMenu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Hamburger icon */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#" onclick="window.location.reload(true);">RSVP</Nav.Link>
+            <Nav.Link target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLScXoy9jtMeEskgjE1Z0YwnIr7dTbKXQ25O4cFleKiptkhg1Yw/viewform?usp=header'>RSVP</Nav.Link>
             <Nav.Link href="#" onclick="window.location.reload(true);">OUR STORY</Nav.Link>
             <Nav.Link href="#" onclick="window.location.reload(true);">ITINERARY</Nav.Link>
             
