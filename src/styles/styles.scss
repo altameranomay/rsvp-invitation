@@ -1,11 +1,4 @@
 body {
-    
-    /**
-    overflow-x: hidden !important;
-    &::-webkit-scrollbar {
-        overflow-x:hidden !important
-    }*/
-    /**background-color: #26523e;*/
     background-color: #e8e4dd;
 }
 .page-wrapper, #root {
@@ -25,33 +18,48 @@ body {
     padding: 0;
     width: 100%;
     overflow: hidden;
-    /**img {
-        filter:  hue-rotate(2deg) brightness(75%) saturate(200%);
-    }*/
-    .image-btn-container {
+    position: relative;
+    .header-text-container {
         position: absolute;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
+        z-index: 999;
         display: flex;
         justify-content: flex-end;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 25vh;
-        p {
-            color: #ffffff;
+        height: 100%;
+        padding-bottom: 100px;
+        h5 {
+            font-family: 'Antic Didone';
             font-weight: 600;
+            font-style: normal;
+            text-transform: uppercase;
+            color: #ede8e1;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.5;
         }
-        a {
-            color: #000000;
-            padding: 5px 60px;
-            background-color: #ffffff;
+        .RSVP-link {
+            font-family: 'Antic Didone';
+            font-weight: 600;
+            font-style: normal;
+            background-color: rgba(214, 209, 196, 1);
+            transition-duration: 0.5s;
+            transition-property: background-color;
+            color: #0d1b21;
+            font-size: 12px;
+            padding: 8px 50px;
+            &:hover, &:active, &:visited, &:focus, &.active  {
+                color: #000000 !important;
+                background-color: rgb(184, 179, 168) !important;
+                font-style: normal !important;
+            }
         }
     }
+    /**img {
+        filter:  hue-rotate(2deg) brightness(75%) saturate(200%);
+    }*/
 }
-
 .zoom-image {
     width: 115%;
     height: auto;
@@ -85,26 +93,6 @@ body {
             width: 70%;
             text-align: center;
             font-size: 14vh;
-            /**
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100px;
-                height: 2px;
-                background-color: #ffffff;
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 100px;
-                height: 2px;
-                background-color: #ffffff;
-            }
-            */
         }
     }
 }

@@ -1,18 +1,54 @@
-import TypeWriter from './TypeWriter';
+import { useEffect, useRef, useState } from 'react';
+
+const images = ['/images/prenup-grizzle.png'];
 
 const Header = () => {
-  return (
-    <div className="RSVP-container">
-        <div className="rsvp-text-container" >
-            <h2 data-aos="zoom-in"  className='you'>Bel </h2>
-            <p  className='separator' data-aos="zoom-in" >& </p>
-            <h2 data-aos="zoom-in" className='invited'>Jeffrey </h2>
-            <TypeWriter words={['October 25 2025', "You're cordially Invited"]} typingSpeed={120} deletingSpeed={60} pauseTime={1000}/>
-            <a href='/' className='rsvp-link'>RSVP by September 25 2025</a>
-            <p className='desc'>Welcome to our wedding website! We've created this site as a convenient and interactive way to share all of the important details with you leading up to our wedding. We can't wait to celebrate this exciting new chapter of our lives together with you.</p>
-        </div>
-    </div>
-  )
-}
+  const imageRefs = useRef([]);
+  const [scales, setScales] = useState(images.map(() => 1));
 
-export default Header
+  useEffect(() => {
+    const handleScroll = () => {
+      const newScales = imageRefs.current.map((img) => {
+        if (!img) return 1;
+
+        const rect = img.getBoundingClientRect();
+        const viewportCenter = window.innerHeight / 2;
+        const imageCenter = rect.top + rect.height / 2;
+        const distance = Math.abs(viewportCenter - imageCenter);
+        const maxDistance = window.innerHeight / 2;
+
+        const ratio = Math.max(0, 1 - distance / maxDistance); // 0 to 1
+        const scale = 1 + ratio * 0.2; // Zoom up to 1.2
+
+        return scale;
+      });
+
+      setScales(newScales);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial call
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+      <div className="image-container -right head">
+        {images.map((src, index) => (
+          <img
+            key={index}
+            ref={(el) => (imageRefs.current[index] = el)}
+            src={process.env.PUBLIC_URL + src}
+            alt={`Zoom Image ${index}`}
+            className="zoom-image"
+            style={{ transform: `scale(${scales[index]})` }}
+          />
+        ))}
+        <div className='header-text-container'>
+          <h5>We are so excited to celebrate with you! <br/>
+          Please RSVP 1 month before October 25, 2025</h5>
+          <a className='RSVP-link' target="_blank" href='https://www.facebook.com/'>RSVP</a>
+        </div>
+      </div>
+  );
+};
+export default Header;
