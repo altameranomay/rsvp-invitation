@@ -46,7 +46,7 @@ const Header = () => {
         <div className='header-text-container'>
           <h5>We are so excited to celebrate with you! <br/>
           Please RSVP 1 month before October 25, 2025</h5>
-          <a className='RSVP-link' target="_blank" href='https://www.facebook.com/'>RSVP</a>
+          <a className='RSVP-link' target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLScXoy9jtMeEskgjE1Z0YwnIr7dTbKXQ25O4cFleKiptkhg1Yw/viewform?usp=header'>RSVP</a>
         </div>
       </div>
   );
