@@ -11,6 +11,7 @@ import OurStory from './content/OurStory';
 import CountdownTimer from './content/CountdownTimer';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
+import Gift from './content/Gift';
 import Mpplayer from './content/Mpplayer';
 import Location from './content/Location';
 
@@ -27,6 +28,7 @@ function App() {
         <CountdownTimer/>
         <Gallery/>
         <Gallery1/>
+        <Gift/>
         <Mpplayer/>
         <Location/>
         <Routes>

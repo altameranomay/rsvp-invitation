@@ -464,3 +464,10 @@ body {
         margin: 0 auto;
     }
 }
+.gift-container {
+    .gift-img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+    }
+}
