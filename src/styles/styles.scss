@@ -465,9 +465,51 @@ body {
     }
 }
 .gift-container {
+    max-width: 800px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+    min-width: none;
+    height: 400px;
     .gift-img {
         width: 500px;
-        height: 500px;
+        height: 350px;
         object-fit: cover;
+    }
+    .text-gift-container {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 450px;
+        height: 300px;
+        background: #ffffff;
+        padding: 50px 50px;
+        h1 {
+            font-size: 36px;
+            font-family: 'Antic Didone';
+            font-weight: 600;
+        }
+        p {
+            font-family: 'Antic Didone';
+            font-size: 14px;
+            color: #0d1b21;
+        }
+        input {
+            visibility: collapse;
+            position: absolute;
+        }
+        .btn-copy-number {
+            background-color: #0d1b21;
+            color: #ebe9bf;
+            font-family: 'Antic Didone';
+            font-weight: 600;
+            font-size: 12px;
+            border-radius: 0px;
+            padding: 10px 30px;
+            &:active, &:hover, &:visited, &:focus, &:target {
+                color: #ebe9bf;
+                background-color: #1e353f;
+            }
+        }
     }
 }

@@ -17,28 +17,28 @@ dots: true,
     <div className="slider-container">
        <Slider {...settings}>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-031.JPG'}/>
+          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG'/>
         </div>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-076.JPG'}/>
+          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-076.JPG'/>
         </div>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-083.JPG'}/>
+          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG'/>
         </div>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-198.JPG'}/>
+          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-198.JPG'/>
         </div>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/Jeffxbel-24.jpg'}/>
+          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Jeffxbel-24.jpg'/>
         </div>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-010.JPG'}/>
+          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-010.JPG'/>
         </div>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-014.JPG'}/>
+          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG'/>
         </div>
         <div className="img-slider-cont">
-          <img alt='gallery' src={process.env.PUBLIC_URL + '/images/prenup-edited-018.JPG'}/>
+          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-018.JPG'/>
         </div>
        
       </Slider>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const images = [
-  '/images/prenup-edited-342.JPG',
+  'https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-342.JPG',
 ];
 
 
@@ -45,14 +45,14 @@ const Intro = () => {
           <img
             key={index}
             ref={(el) => (imageRefs.current[index] = el)}
-            src={process.env.PUBLIC_URL + src}
+            src={src}
             alt={`Zoom Image ${index}`}
             className="zoom-image"
             style={{ transform: `scale(${scales[index]})` }}
           />
         ))}
         <div className='img-oblique-container'>
-            <img alt='' src={process.env.PUBLIC_URL + '/images/prenup-edited-010.JPG'}/>
+            <img alt='' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-010.JPG'/>
         </div>
         {/* <div className='intro-text'>
           <h2>God's Ordained</h2>

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-const images = ['/images/prenup-grizzle.png'];
+const images = ['https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-grizzle.png'];
 
 const Header = () => {
   const imageRefs = useRef([]);
@@ -37,7 +37,7 @@ const Header = () => {
           <img
             key={index}
             ref={(el) => (imageRefs.current[index] = el)}
-            src={process.env.PUBLIC_URL + src}
+            src={src}
             alt={`Zoom Image ${index}`}
             className="zoom-image"
             style={{ transform: `scale(${scales[index]})` }}

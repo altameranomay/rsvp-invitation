@@ -130,6 +130,17 @@
 
 
     }
+    .gift-container {
+        max-width: 100%;
+        .gift-img {
+            height: 500px;
+            width: 100%;
+        }
+        .text-gift-container  {
+            right: -80px;
+            padding: 50px 120px 50px 50px;
+        }
+    }
 }
 /**
 @media (max-width:801px) {
