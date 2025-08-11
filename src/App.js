@@ -3,8 +3,8 @@ import AOS from 'aos';
 import './App.css';
 import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom"
 
-// import ZoomImageOnScroll from './content/ZoomImageOnScroll';
-import Header from './content/Header';
+import ZoomImageOnScroll from './content/ZoomImageOnScroll';
+// import Header from './content/Header';
 import HamburgerMenu from './content/HamburgerMenu';
 import Intro from './content/Intro';
 import OurStory from './content/OurStory';
@@ -20,8 +20,8 @@ function App() {
   return (
     <div className="page-wrapper">
       <Router>
-        <Header/>
-        {/* <ZoomImageOnScroll/> */}
+        {/* <Header/> */}
+        <ZoomImageOnScroll/>
         <HamburgerMenu/>
         <Intro/>
         <OurStory/>

@@ -7,6 +7,40 @@ body {
 .spacer {
   height: 100vh; /* To allow scrolling */
 }
+.rsvp-container-zoom {
+    .RSVP-link {
+        font-family: 'Antic Didone';
+        font-weight: 600;
+        font-style: normal;
+        background-color: #0d1b21 ;
+        transition-duration: 0.5s;
+        transition-property: background-color;
+        color: #0d1b21;
+        font-size: 12px;
+        padding: 12px 50px;
+        position: absolute;
+        bottom: -65px;
+        left: 50%;
+        text-align: left;
+        transform: translate(-50%, -50%);
+        background-color: rgba(214,209,196,1);
+        &:hover, &:active, &:visited, &:focus, &.active  {
+            color: #0d1b21 !important;
+            background-color: rgba(214,209,196,1);
+            font-style: normal !important;
+        }
+        /**&::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            border: 1px solid #f3f1c4 !important;
+            height: 42px;
+            width: 128px;
+            left: 8px;
+            z-index: 1;
+        }*/
+    }
+}
 .image-container {
     height: 100vh;
     display: flex;

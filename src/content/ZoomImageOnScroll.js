@@ -1,59 +1,117 @@
-import { useEffect, useRef, useState } from 'react';
+import React, { useState, useEffect } from "react";
 
 const images = [
-  '/images/prenup-grizzle.png',
+  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-grizzle.png",
+  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG",
+  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG",
+  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-mob.jpg",
+  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-mob.jpg",
 ];
 
-const ZoomImageOnScroll = () => {
-  const imageRefs = useRef([]);
-  const [scales, setScales] = useState(images.map(() => 1));
+const texts = [
+  "We are so excited",
+  "To celebrate with you!",
+  "Please RSVP 1 month",
+  "before Oct 25, 2025"
+];
+
+export default function ScrollLockedHeader() {
+  const [index, setIndex] = useState(0);
+  const [scale, setScale] = useState(1);
+  const totalSlides = images.length;
+  const sectionHeight = totalSlides * window.innerHeight;
 
   useEffect(() => {
     const handleScroll = () => {
-      const newScales = imageRefs.current.map((img) => {
-        if (!img) return 1;
+      const scrollTop = window.scrollY;
 
-        const rect = img.getBoundingClientRect();
-        const viewportCenter = window.innerHeight / 2;
-        const imageCenter = rect.top + rect.height / 2;
-        const distance = Math.abs(viewportCenter - imageCenter);
-        const maxDistance = window.innerHeight / 2;
+      // Determine current slide index
+      const slideProgress = scrollTop / window.innerHeight;
+      const newIndex = Math.min(
+        Math.floor(slideProgress),
+        totalSlides - 1
+      );
+      setIndex(newIndex);
 
-        const ratio = Math.max(0, 1 - distance / maxDistance); // 0 to 1
-        const scale = 1 + ratio * 0.2; // Zoom up to 1.2
-
-        return scale;
-      });
-
-      setScales(newScales);
+      // Zoom effect per slide
+      const zoomFactor =
+        1 + ((scrollTop % window.innerHeight) / window.innerHeight) * 0.5;
+      setScale(zoomFactor);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial call
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-      <div className="image-container -right head">
-        {/* <div className='text-container'>
-          <h1 className='text-title'>You're <div className='separator'>Cordially</div> Invited</h1>
-        </div> */}
-        {images.map((src, index) => (
-          // eslint-disable-next-line
+    <div className="rsvp-container-zoom" style={{ height: sectionHeight + "px" }}>
+      <header
+        style={{
+          position: "sticky",
+          top: 0,
+          height: "100vh",
+          overflow: "hidden"
+        }}
+      >
+        {/* Images */}
+        {images.map((src, i) => (
           <img
-            key={index}
-            ref={(el) => (imageRefs.current[index] = el)}
-            src={process.env.PUBLIC_URL + src}
-            alt={`Zoom Image ${index}`}
-            className="zoom-image"
-            style={{ transform: `scale(${scales[index]})` }}
+            key={i}
+            src={src}
+            alt={`Slide ${i}`}
+            style={{
+              position: "absolute",
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              transform: `scale(${scale})`,
+              transition: "transform 0.2s ease-out",
+              opacity: i === index ? 1 : 0,
+              transitionProperty: "opacity, transform",
+              transitionDuration: "0.5s",
+              transitionTimingFunction: "ease-out"
+            }}
           />
         ))}
-        {/* <div className='image-btn-container'>
-          <p>RSVP by September 25 2025</p>
-          <a href="/">RSVP</a>
-        </div> */}
-      </div>
+
+        {/* Overlay for text contrast */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            background: "rgba(0,0,0,0.3)"
+          }}
+        />
+
+        {/* Text */}
+        {texts.map((text, i) => (
+          <h1
+            key={i}
+            style={{
+              position: "absolute",
+              fontFamily: "Antic Didone",
+              fontWeight: "600",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              color: "#fff",
+              fontSize: "3rem",
+              textAlign: "center",
+              minWidth:"300px",
+              opacity: i === index ? 1 : 0,
+              transition: "opacity 0.5s ease-out",
+              zIndex: 3
+            }}
+          >
+            {text}
+            <a className='RSVP-link' target="_blank" href='https://docs.google.com/forms/d/e/1FAIpQLScXoy9jtMeEskgjE1Z0YwnIr7dTbKXQ25O4cFleKiptkhg1Yw/viewform?usp=header'>RSVP</a>
+          </h1>
+        ))}
+
+      </header>
+    </div>
   );
-};
-export default ZoomImageOnScroll;
+}
