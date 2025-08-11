@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
+import { isMobile } from "react-device-detect";
 
-const images = ['https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-grizzle.png'];
+const images = isMobile ? ['https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-mob.jpg'] : ['https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-grizzle.png'];
 
 const Header = () => {
+
   const imageRefs = useRef([]);
   const [scales, setScales] = useState(images.map(() => 1));
 
