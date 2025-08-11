@@ -2,17 +2,15 @@ import React, { useState, useEffect } from "react";
 
 const images = [
   "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-grizzle.png",
-  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG",
-  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG",
+  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-360-1.jpg",
   "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-mob.jpg",
-  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-mob.jpg",
+  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-009.JPG",
+  "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-197.JPG"
 ];
 
 const texts = [
-  "We are so excited",
-  "To celebrate with you!",
-  "Please RSVP 1 month",
-  "before Oct 25, 2025"
+  "We are so excited to celebrate with you!",
+  "Please RSVP 1 month before Oct 25, 2025"
 ];
 
 export default function ScrollLockedHeader() {
@@ -98,7 +96,7 @@ export default function ScrollLockedHeader() {
               left: "50%",
               transform: "translate(-50%, -50%)",
               color: "#fff",
-              fontSize: "3rem",
+              fontSize: "30px",
               textAlign: "center",
               minWidth:"300px",
               opacity: i === index ? 1 : 0,

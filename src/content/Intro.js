@@ -52,7 +52,7 @@ const Intro = () => {
           />
         ))}
         <div className='img-oblique-container'>
-            <img alt='' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-010.JPG'/>
+            <img alt='' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-010-1.jpg'/>
         </div>
         {/* <div className='intro-text'>
           <h2>God's Ordained</h2>

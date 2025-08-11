@@ -12,7 +12,7 @@ function myFunction() {
         <div className="gift-container" id="gift">
           <img 
             data-aos="fade-up"
-            className="gift-img" alt='send gift image' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-076.JPG'/>
+            className="gift-img" alt='send gift image' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-094.JPG'/>
           <div className="text-gift-container"
             data-aos="fade-up"
             data-aos-duration="1000"

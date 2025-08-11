@@ -4,7 +4,7 @@ import './App.css';
 import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom"
 
 import ZoomImageOnScroll from './content/ZoomImageOnScroll';
-// import Header from './content/Header';
+// import Cursive from './content/Cursive';
 import HamburgerMenu from './content/HamburgerMenu';
 import Intro from './content/Intro';
 import OurStory from './content/OurStory';
@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="page-wrapper">
       <Router>
-        {/* <Header/> */}
+        {/* <Cursive/> */}
         <ZoomImageOnScroll/>
         <HamburgerMenu/>
         <Intro/>
