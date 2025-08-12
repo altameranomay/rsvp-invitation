@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 
-export default function BankAcc() {
-  const [value, setValue] = useState("Bank: PNB, Account Name: Maybelyn Picardal, Account #: 131310160347");
+export default function BankAcc1() {
+  const [value, setValue] = useState("Bank: BDO, Account Name: Jeffrey Louie M. Montevirgen, Account #: 001820981159");
   const [copied, setCopied] = useState(false);
   const inputRef = useRef(null);
 
@@ -30,12 +30,12 @@ export default function BankAcc() {
   return (
           <div className="bank">
             <img alt="Bank" 
-              src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/pnb.png"
+              src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/bdo.png"
                className="pnb"/>
             <p>
-              Bank: PNB, <br/>
-              Name: Maybelyn Picardal,  <br/>
-              Account #: 131310160347
+              Bank: BDO, <br/>
+              Name: Jeffrey Louie M. Montevirgen,  <br/>
+              Account #: 001820981159
             </p>
             <input
               ref={inputRef}
@@ -44,7 +44,7 @@ export default function BankAcc() {
               style={{ padding: "6px", flex: 1 }}
             />
             <button class="btn btn-light btn-copy-number"  onClick={handleCopyBank}>
-              {copied ? "Copy done" : "Copy PNB"}
+              {copied ? "Copy done" : "Copy BDO"}
             </button>
           </div>
     )

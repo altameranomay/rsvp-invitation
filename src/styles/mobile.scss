@@ -19,29 +19,79 @@
     }
     .navbar-light {
         align-items: flex-start;
-        .navbar-toggler-icon {
-            background-image: url("/public/images/hamburger.png");;
+        width: 100%;
+        transition: 0.3s;
+        &.active {
+            min-height: 100vh;
+            position: fixed !important;
         }
-        .-mobile {
+        .container {
+            overflow: hidden;
+            height: 55px;
             display: block;
-            img {
-                height: 55px;
+            &.active{
+                height: 90vh;
+                transition: height 0.4s ease, opacity 0.3s ease;
+            }
+            .navbar-brand {
+                img {
+                    height: 47px;
+                }
+            }
+            .btn-light {
+                background: transparent !important;
+                border: transparent !important;
+                height: 50px;
+                width: 50px;
+                float: right;
+                .closed {
+                    display: none;
+                }
+                .hamburger {
+                    display: block;
+                }
+                &:focus, &:active, &:target &:hover,
+                .btn-light:not(:disabled):not(.disabled):active:focus {
+                    background: transparent !important;
+                    border: transparent !important;
+                    box-shadow: 0 0 0;
+                }
+                &.active {
+                    .hamburger {
+                        display: none;
+                    }
+                    .closed {
+                        display: block;
+                    }
+                }
+                img {
+                    height: 35px;
+                    width: 35px;                
+                }
             }
         }
         .navbar-nav {
             align-items: flex-start;
-            .nav-link {
-                font-family: "Montserrat", serif;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 12px;
-                color: #f3f1c4;
-                padding: 24px 0 24px 24px;
+            display: none;
+            opacity: 0;
+            &.active {
+                display: block;
+                opacity: 1;
+            }
+            li {
                 width: 100%;
+                .nav-link {
+                    font-family: "Montserrat", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 18px;
+                    color: #f3f1c4;
+                    padding: 30px 0 24px 0;
+                    width: 100%;
+                    text-align: center;
+                }
             }
-            .navbar-brand {
-                display: none !important;
-            }
+
         }
     }
     #navbar {
@@ -79,7 +129,7 @@
         }
     }
     .our-story-container {
-        padding: 80px 30px;
+        padding: 80px 30px 50px 30px;
         text-align: center;
         h5 {
             margin-bottom: 40px;
@@ -132,9 +182,10 @@
     }
     .gift-container {
         max-width: 100%;
-        min-height: 600px !important;
+        overflow: unset !important;
+        min-height: unset !important;
         .gift-img {
-            height: 85vh;
+            height: 110vh;
             width: 100%;
         }
         .text-gift-container  {

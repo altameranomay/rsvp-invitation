@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import BankAcc from "./BankAcc";
+import BankAcc1 from "./BankAcc1";
 
 export default function Gift() {
   const [value, setValue] = useState("Name: Jeffrey Louise Montevirgen, Gcash #: 09454153802");
@@ -31,21 +32,20 @@ export default function Gift() {
   return (
         <div className="gift-container" id="gift">
           <img 
-            data-aos="fade-up"
             className="gift-img" alt='send gift image' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-094.JPG'/>
           <div className="text-gift-container"
-            data-aos="fade-up"
-            data-aos-duration="1000"
           >
             <h1>Send Your Gift</h1>
             <p>Give your special gift to the bride and groom, either in the form of a gift or cashless through the button below</p>
-            <p>You can donate via Gcash or PNB</p>
+            <p>You can donate via Gcash, PNB or BDO</p>
             <div className="bank-cover">
               <div className="online-bank">
-                <p>
-                  <img alt="gcash" 
+                <img alt="gcash" 
                     src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/gcash.png"
                     className="gcash"/>
+                <p>
+                  Name: Jeffrey Louie M. Montevirgen,<br/>
+                  Gcash #: 09454153802
                 </p>
                 <input
                   ref={inputRef}
@@ -54,10 +54,11 @@ export default function Gift() {
                   style={{ padding: "6px", flex: 1 }}
                 />
                 <button class="btn btn-light btn-copy-number"  onClick={handleCopy}>
-                  {copied ? "Copied!" : "Copy Gcash"}
+                  {copied ? "Copy done" : "Copy Gcash"}
                 </button>
               </div>
               <BankAcc/>
+              <BankAcc1/>
             </div>
           </div>
 

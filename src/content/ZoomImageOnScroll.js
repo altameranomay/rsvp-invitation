@@ -42,7 +42,7 @@ export default function ScrollLockedHeader() {
   }, []);
 
   return (
-    <div className="rsvp-container-zoom" style={{ height: sectionHeight + "px" }}>
+    <div className="rsvp-container-zoom" style={{ height: sectionHeight + "px" }} id="rsvp">
       <header
         style={{
           position: "sticky",

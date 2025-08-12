@@ -5,6 +5,7 @@ import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom"
 
 import ZoomImageOnScroll from './content/ZoomImageOnScroll';
 import HamburgerMenu from './content/HamburgerMenu';
+import Navigator from './content/Navigator';
 import Intro from './content/Intro';
 import OurStory from './content/OurStory';
 import CountdownTimer from './content/CountdownTimer';
@@ -21,7 +22,8 @@ function App() {
     <div className="page-wrapper">
       <Router>
         <ZoomImageOnScroll/>
-        <HamburgerMenu/>
+        {/* <HamburgerMenu/> */}
+        <Navigator/>
         <Intro/>
         <OurStory/>
         <CountdownTimer/>

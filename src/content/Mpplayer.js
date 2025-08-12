@@ -7,8 +7,6 @@ const Mpplayer = () => {
 
   return (
     <div className='mp3-container'
-    data-aos="fade-up"
-    data-aos-duration="1000"
     >
       <h3>Forevermore</h3>
       <p>By Side A</p>
