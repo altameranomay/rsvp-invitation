@@ -5,7 +5,7 @@ const OurStory = () => {
             <h5 data-aos="zoom-in-up">God's Ordain</h5>
 
             <p data-aos="zoom-in-up">When the time is right, I the Lord, will make it happen quickly.</p>
-            <p data-aos="zoom-in-up">Cotton candy jujubes candy canes gingerbread donut icing gingerbread chocolate bar bonbon. Pudding toffee sweet roll dessert gummies sweet danish oat cake pastry. Pudding pastry bonbon macaroon jujubes. Toffee gingerbread toffee sugar plum chocolate bar chocolate bar. Chocolate sweet roll soufflé chocolate dessert apple pie. Cookie sweet roll cupcake gingerbread jujubes candy canes pudding sweet liquorice. Bonbon cheesecake halvah sugar plum chupa chups candy canes. Carrot cake croissant pudding pastry marshmallow fruitcake bonbon bear claw ice cream.</p>
+            <p data-aos="zoom-in-up">Our story is a testimony of GOD's greatness and faithfulness. He brought our paths together in His perfect  timing and has been the center of our relationship. It all began from being a tourist guide turned into forever. A God's ordained relationship into marriage. Through joys, challenges and dreams, we've seen His hand guiding us every step. From coffee dates to late night bible sharing and countless prayers, our love has grown stronger with each passing day. We are greatful for the journey God has written for us, and we can't wait to begin this new chapter as husband and wife. Trusting that the One who started this beautiful story will carry it on forever.</p>
         </div>
     )
 }

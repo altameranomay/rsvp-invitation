@@ -132,14 +132,15 @@
     }
     .gift-container {
         max-width: 100%;
-        height: 500px;
+        min-height: 600px !important;
         .gift-img {
-            height: 500px;
+            height: 85vh;
             width: 100%;
         }
         .text-gift-container  {
-            right: -80px;
-            padding: 50px 120px 50px 50px;
+            right: 0;
+            padding: 50px 30px 50px 50px;
+            width: 90%;
         }
     }
 }
