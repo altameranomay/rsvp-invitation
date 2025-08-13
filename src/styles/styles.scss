@@ -640,6 +640,7 @@ body {
             }
         }
         .guest-list-container {
+            z-index: 100;
             padding: 100px 0;
             .two-list-guest {
                 display: flex;
@@ -693,21 +694,50 @@ body {
     .flower {
         height: 300px;
         width: 500px;
-        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/corner-flower.png');
+        overflow: hidden;
+        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/flower-top.png');
         background-size: contain;
         background-repeat: no-repeat;
         &.top-left {
             position: absolute;
             top: 0;
             left: 0;
-            transform: rotate(90deg) translate(54px, 100px);
+            transform: rotate(0deg) translate(0, 0);
             z-index: 2;
         }
         &.bottom-right {
             position: absolute;
             bottom: 0;
             right: 0;
-            transform: rotate(270deg) translate(54px, 100px);
+            transform: rotate(180deg) translate(0, 0);
+            z-index: 2;
+        }
+    }
+    .ent-girl {
+        height: 280px;
+        width: 150px;
+        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/dress-1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.bottom-left {
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+            transform: rotate(0) translate(0, 0);
+            z-index: 3;
+        }
+    }
+    .ent-boy {
+        height: 280px;
+        width: 150px;
+        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/suit-1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.bottom-left {
+            position: absolute;
+            bottom: 50px;
+            left: 130px;
+            transform: rotate(0) translate(0, 0);
             z-index: 2;
         }
     }

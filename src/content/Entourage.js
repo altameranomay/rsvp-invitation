@@ -9,7 +9,7 @@ const Entourage = () => {
           backgroundAttachment: "fixed",
           minHeight:"100vh",
           width: "100%",
-          backgroundSize: "100% 100%",
+          backgroundSize: "100% 100% ",
           backgroundRepeat:"repeat" // keeps background static
         }}
       >
@@ -219,6 +219,9 @@ const Entourage = () => {
           </div>
         </div>
       </div>
+
+      <div className="ent-girl bottom-left"/>
+      <div className="ent-boy bottom-left"/>
       <div className="flower bottom-right"/>
     </div>
     )
