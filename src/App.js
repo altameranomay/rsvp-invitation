@@ -8,12 +8,13 @@ import Navigator from './content/Navigator';
 import Intro from './content/Intro';
 import OurStory from './content/OurStory';
 import CountdownTimer from './content/CountdownTimer';
+import Entourage from './content/Entourage';
+import DressCode from './content/DressCode';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
 import Gift from './content/Gift';
-import Entourage from './content/Entourage';
 import Mpplayer from './content/Mpplayer';
-import Location from './content/Location';
+import Footer from './content/Footer';
 
 function App() {
   AOS.init();
@@ -26,18 +27,19 @@ function App() {
         <OurStory/>
         <CountdownTimer/>
         <Entourage/>
+        <DressCode/>
         <Gift/>
         <Gallery/>
         <Gallery1/>
         <Mpplayer/>
-        <Location/>
+        <Footer/>
         <Routes>
           <Route path="/" exact />
           <Route path="/product/productId" exact />
           <Route path="/404">404 not found</Route>
         </Routes>
       </Router>
-      <div className='spacer'/>
+      {/* <div className='spacer'/> */}
     </div>
   );
 }

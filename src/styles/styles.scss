@@ -2,7 +2,9 @@ body {
     background-color: #e8e4dd;
     -webkit-overflow-scrolling: touch;
     -webkit-transform:translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility:hidden;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
 }
 .page-wrapper, #root {
   width: 100%;
@@ -86,7 +88,7 @@ body {
             color: #0d1b21;
             font-size: 12px;
             padding: 8px 50px;
-            &:hover, &:active, &:visited, &:focus, &.active  {
+            &:hover, &:active, &:focus, &.active  {
                 color: #000000 !important;
                 background-color: rgb(184, 179, 168) !important;
                 font-style: normal !important;
@@ -209,7 +211,7 @@ body {
             color: #f3f1c4;
             padding-right: .5rem;
             padding-left: .5rem;
-            &:hover, &:active, &:visited, &:focus, &.active  {
+            &:hover, &:active,&:focus, &.active  {
                 color: #9f9d78;
             }
         }
@@ -537,7 +539,7 @@ body {
         z-index: -1;
         width: 500px;
         height: 450px;
-        background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-100.JPG");
+        background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-076.JPG");
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -545,9 +547,21 @@ body {
         width: 400px;
         min-width: 400px;
         min-height: 300px;
-        background: #ffffff;
+        background-color: #ffffff;
         padding: 50px 50px;
         position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/gift.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 100px;
+            width: 100px;
+        }
         /**transform: translate(-110px, 70px);*/
         h1 {
             font-size: 36px;
@@ -578,7 +592,7 @@ body {
             border-radius: 0px;
             padding: 8px 10px;
             width: 50px;
-            &:active, &:hover, &:visited, &:focus, &:target {
+            &:active, &:hover,  &:focus, &:target {
                 color: #ebe9bf;
                 background-color: #011f17;
             }
@@ -590,7 +604,7 @@ body {
                 font-family: 'Antic Didone';
                 font-size: 13px;
                 color: #0d1b21;
-                background: #e9ecef;
+                background: #f4f4f4;
                 padding: 5px;
                 margin-right: 10px;
             }
@@ -748,6 +762,222 @@ body {
             left: 130px;
             transform: rotate(0) translate(0, 0);
             z-index: 2;
+        }
+    }
+}
+.dresscode-container {
+    position: relative;
+    .dresscode-background {
+        text-align: center;
+        min-height: 100vh;
+    }
+    .txt-dresscode-title {
+        width: 450px;
+        height: 140px;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+        display: block;
+        background-position: center;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/attire.png");
+    }
+    .dress-codes {
+        transform:translate(0, -180px);
+        .one-list {
+            margin-bottom: 50px;
+            .palette {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                padding-bottom: 70px;
+                span {
+                    width: 60px;
+                    height: 60px;
+                    position: relative;
+                    background-color: #000;
+                    border-radius: 100px;
+                    border: 2px solid #fff;
+                    margin: 0 5px;
+                    &.cream {
+                        background-color: #ecdbc9;
+                    }
+                    &.bitter {
+                        background-color: #7d936f;
+                    }
+                    &.forest-green {
+                        background-color: #56654d;
+                    }
+                    &.deep-forest-green {
+                        background-color: #1b3b24;
+                    }
+                }
+            }
+        }
+        .code-title {
+            position:unset;
+            font-family: 'Antic Didone';
+            font-weight: 600;
+            font-style: normal;
+            font-size: 12px;
+            color: #698079 !important;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .code-name {
+            font-family: 'Antic Didone';
+            font-weight: 600;
+            font-style: normal;
+            font-size: 18px;
+            color: #002a1e !important;
+            text-transform: normal;
+            word-wrap: break-word;
+            white-space:pre-wrap;
+        }
+    }
+    .flower {
+        height: 300px;
+        width: 500px;
+        overflow: hidden;
+        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/flower-top.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.top-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: rotate(90deg) translate(101px, -100px);
+            z-index: 2;
+        }
+    }
+    .flower-2 {
+        height: 120px;
+        width: 100%;
+        overflow: hidden;
+        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/flower-bottom.png');
+        background-size: contain;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        &.top-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: rotate(90deg) translate(101px, -100px);
+            z-index: 2;
+        }
+    }
+    .girl-dresscode {
+        height: 280px;
+        width: 150px;
+        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/dress-2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.top-left {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 150px;
+            left: 20px;
+            transform: rotate(0) translate(0, 0);
+            z-index: 2;
+        }
+    }
+    .boy-dresscode {
+        height: 280px;
+        width: 150px;
+        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/suit-2.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.bottom-left {
+            position: absolute;
+            bottom: 0;
+            left: 90px;
+            transform: rotate(0) translate(0, 0);
+            z-index: 1;
+        }
+    }
+}
+.footer-container {
+    background-color: #c8c1b4;
+    padding-top: 50px;
+    .footer-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 0 50px 0;
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 6px 4px;
+        }
+    }
+    .top {
+        .txt-normal {
+            font-family: 'Antic Didone';
+            font-weight: 600;
+            font-style: normal;
+            color: #0d1b21;
+            font-size: 14px;
+            margin: 0 auto;
+            width: 70%;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            position: relative;
+            width: 70%;
+            margin: 30px auto;
+            padding: 0;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                height: 1px;
+                width: 100%;
+                background-color: #0d1b21;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                background-color: #0d1b21;
+            }
+            li {
+                list-style: none;
+                text-align: center;
+                padding: 10px 0;
+                a {
+                    font-family: 'Antic Didone';
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 12px;
+                    color: #0d1b21;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .bottom {
+        background-color: #002a1e;
+        text-align: center;
+        height: 50px;
+        p {
+            font-family: "Montserrat", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 8px;
+            color: #fff !important;
+            text-transform: uppercase;
+            padding: 13px 0;
+            margin: 0 50px;
         }
     }
 }

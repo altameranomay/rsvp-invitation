@@ -195,6 +195,9 @@
             width: 85%;
             margin-left: auto;
             min-width: auto;
+            &::before {
+                top: -45px;
+            }
         }
     }
     .entourage-container {
@@ -238,6 +241,62 @@
             &.bottom-left {
                 bottom: 0;
                 left: 50px;
+            }
+        }
+    }
+    .dresscode-container {
+        .dresscode-background {
+            .txt-dresscode-title {
+                width: 300px;
+                height: 100px;
+                top: 60px;
+            }
+            .dress-codes {
+                transform: translate(0, -115px);
+            }
+        }
+        .flower {
+            &.top-right {
+                width: 250px;
+                height: 250px;
+                transform: rotate(90deg) translate(0, 0);
+            }
+        }
+        .girl-dresscode {
+            height: 200px;
+            &.bottom-left {
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .boy-dresscode  {
+            height: 200px;
+            &.bottom-left {
+                bottom: 0;
+                left: 70px;
+            }
+        }
+    }
+    .footer-container {
+        hr {
+            border-top:1px solid #0d1b21;
+            width: 70%;
+        }
+        p {
+            font-size: 7px;
+            line-height: 1.5;
+        }
+        .wedding-logo {
+            height: 60px;
+            display: block;
+            margin: 0 auto;
+        }
+        .footer-images {
+            img {
+                width: 105px;
+                height: 105px;
+                object-fit: cover;
+                margin: 6px 4px;
             }
         }
     }

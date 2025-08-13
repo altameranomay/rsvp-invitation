@@ -31,22 +31,6 @@ export default function Gallery() {
       {isMobile ? (
          <Slider {...settingsMob}>
          <div className="img-slider-cont">
-           <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG'/>
-         </div>
-         <div className="img-slider-cont">
-          <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG'/>
-          </div>
-         <div className="img-slider-cont">
-           <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG'/>
-         </div>
-         <div className="img-slider-cont">
-           <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-204.png'/>
-         </div>
-         
-       </Slider>
-      ) : (
-          <Slider {...settings}>
-            <div className="img-slider-cont">
               <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-381.png'/>
             </div>
             <div className="img-slider-cont">
@@ -73,6 +57,21 @@ export default function Gallery() {
             <div className="img-slider-cont">
               <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-204.png'/>
             </div>
+       </Slider>
+      ) : (
+          <Slider {...settings}>
+             <div className="img-slider-cont">
+                <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG'/>
+              </div>
+              <div className="img-slider-cont">
+                <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG'/>
+                </div>
+              <div className="img-slider-cont">
+                <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG'/>
+              </div>
+              <div className="img-slider-cont">
+                <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-204.png'/>
+              </div>
           </Slider>
         
       )}

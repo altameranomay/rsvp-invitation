@@ -1,15 +1,15 @@
 const Entourage = () => {
   return (
-      <div className="entourage-container">
+      <div className="entourage-container" id="entourage">
         <div className="flower top-left"/>
         <div
         className="relative entourage-background"
         style={{
-          backgroundImage: "url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/entourage-background.png')",
+          backgroundImage: "url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/entourage-background-1.jpg')",
           backgroundAttachment: "fixed",
           minHeight:"100vh",
           width: "100%",
-          backgroundSize: "100% 100% ",
+          backgroundSize: "contain",
           backgroundRepeat:"repeat" // keeps background static
         }}
       >
@@ -23,7 +23,6 @@ const Entourage = () => {
           <div className="one-list">
             <h1 className="guest-title">
               Officiant
-              {/* <img className="img-title" src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/parent.png' alt='Officiant'/> */}
             </h1>
             <p className="guest-name">Bishop Robert Isles</p>
           </div>

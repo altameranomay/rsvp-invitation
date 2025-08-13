@@ -24,9 +24,9 @@ export default function Navigator() {
     const navLinks = [
         { id:'rsvp', name: "RSVP", href: "#RSVP" },
         { id:'our-story', name: "OUR STORY", href: "#our-story" },
-        { id:'gallery', name: "GALLERY", href: "#gallery" },
+        { id:'entourage', name: "ENTOURAGE", href: "#entourage" },
         { id:'gift', name: "GIFT", href: "#gift" },
-        { id:'rsvp', name: "DRESS CODE", href: "#dress-code" },
+        { id:'gallery', name: "GALLERY", href: "#gallery" },
         { id:'rsvp', name: "ITINERARY", href: "#itinerary" },
 
     ];
@@ -76,7 +76,7 @@ export default function Navigator() {
                     <a href="#our-story"  className="nav-link" onClick={() => scrollToView('our-story')}>OUR STORY</a>
                 </li>
                 <li>
-                    <a href="#gallery"  className="nav-link" onClick={() => scrollToView('gallery')}>GALLERY</a>
+                    <a href="#entourage"  className="nav-link" onClick={() => scrollToView('entourage')}>ENTOURAGE</a>
                 </li>
                 <li>
                     <a href="#rsvp" className="navbar-brand" onClick={() => scrollToView('rsvp')}>
@@ -87,7 +87,7 @@ export default function Navigator() {
                     <a href="#gift"  className="nav-link" onClick={() => scrollToView('gift')}>GIFT</a>
                 </li>
                 <li>
-                    <a href="#dress-code"  className="nav-link" onClick={() => scrollToView('dress-code')}>DRESS CODE</a>
+                    <a href="#gallery"  className="nav-link" onClick={() => scrollToView('gallery')}>GALLERY</a>
                 </li>
                 <li>
                     <a href="#itinerary"  className="nav-link" onClick={() => scrollToView('itinerary')}>ITINERARY</a>
