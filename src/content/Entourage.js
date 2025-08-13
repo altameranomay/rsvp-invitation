@@ -92,7 +92,7 @@ const Entourage = () => {
             </h1>
             <p className="guest-name">
               Kurt Patrick Laja <br/>
-              Derick Miranda <br/>
+              John Derick Miranda <br/>
               Jar-Ar L. Lasin <br/>
               Isaiah Chayil Flancia <br/>
             </p>
@@ -165,7 +165,7 @@ const Entourage = () => {
               Bible
             </h1>
             <p className="guest-name">
-              Markus Malacai C. Acesor
+              Markus Malakai C. Acesor
             </p>
           </div>
           <div className="one-list">
@@ -189,7 +189,7 @@ const Entourage = () => {
               Flower Girls
             </h1>
             <p className="guest-name">
-              Raquena Hania G. Sano <br/>
+              Raquena Haniah G. Sano <br/>
               Atarah Ashmin Asesor <br/>
               Faye Andrea G. Montevirgen <br/>
               Zhekainnah Nueva
