@@ -4,7 +4,7 @@ import Countdown from "./Countdown";
 const CountdownTimer = () => {
   return (
     <div className="countdown-container">
-      <img  src={process.env.PUBLIC_URL + '/images/flower.png'} alt='flower' className="flower"/>
+      <img  src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/car.png' alt='flower' className="flower"/>
       <span className="spn-save-date">
         <img  src={process.env.PUBLIC_URL + '/images/save-date.png'} alt='save date' className="save-date"/>
       </span>

@@ -397,6 +397,10 @@ body {
     }
 }
 .countdown-container {
+    /**background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/background-gold-line.png');
+    background-size: 100px 100px;
+    background-position: top center;
+    background-repeat: no-repeat;*/
     max-width: 600px;
     margin: 0 auto 100px auto;
     display: flex;
@@ -406,7 +410,6 @@ body {
     .flower {
         object-fit: cover;
         height: 130px;
-        transform: rotate(-89deg);
     }
     .spn-save-date {
         position: relative;
@@ -450,6 +453,12 @@ body {
             text-align: center;
             font-size: 50px;
             color: #0d1b21;
+            height: 100px;
+            width: 100px;
+            background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/border.png");
+            background-size: 86px 80px;
+            background-repeat: no-repeat;
+            background-position: top center;
             p {
                 font-family: 'Antic Didone';
                 font-weight: 600;
