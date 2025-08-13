@@ -34,7 +34,7 @@ const Entourage = () => {
               Mr. Luisito C. Montevirgen <br/>
             </p>
             <p className="guest-name">
-              Mrs. Amelia C. Altamerano <br/>
+              Dra. Amelia C. Altamerano <br/>
               Mr. Edwin B. Picardal
             </p>
           </div>
