@@ -514,23 +514,32 @@ body {
 }
 .gift-container {
     max-width: 800px;
+    min-height: 640px;
     margin: 50px auto;
     position: relative;
-    min-height: 100vh;
-    overflow-x: hidden;
-    .gift-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    &::after {
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: -1;
         width: 500px;
         height: 450px;
-        object-fit: cover;
+        background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-094.JPG");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .text-gift-container {
-        position: absolute;
-        top: 100px;
-        right: 0;
-        width: 430px;
+        width: 400px;
+        min-width: 400px;
         min-height: 300px;
         background: #ffffff;
         padding: 50px 50px;
+        position: relative;
+        /**transform: translate(-110px, 70px);*/
         h1 {
             font-size: 36px;
             font-family: 'Antic Didone';
@@ -602,12 +611,15 @@ body {
         text-align: center;
         /**mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, transparent 200%);*/
         .txt-entourage-title {
-            width: 500px;
+            width: 450px;
             height: 140px;
-            margin: 0 auto 0 auto;
+            margin: 0 auto;
             position: relative;
-            transform: translate(50px, 50px);
-            object-fit: contain;
+            top: 50px;
+            display: block;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/bridal-entourage.png");
         }
         .btn-download-entourage {
             position: sticky;
@@ -620,6 +632,7 @@ body {
             text-transform: capitalize;
             padding: 10px;
             text-decoration: none !important;
+            z-index: 10;
             &:hover,
             &:active,
             &:focus {

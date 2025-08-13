@@ -31,8 +31,6 @@ export default function Gift() {
   };
   return (
         <div className="gift-container" id="gift">
-          <img 
-            className="gift-img" alt='send gift image' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-094.JPG'/>
           <div className="text-gift-container"
           >
             <h1>Send Your Gift</h1>

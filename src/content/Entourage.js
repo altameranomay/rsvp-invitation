@@ -13,10 +13,12 @@ const Entourage = () => {
           backgroundRepeat:"repeat" // keeps background static
         }}
       >
-        <img className='txt-entourage-title' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/bridal-entourage.png' alt='bridal entourage'/>
         <a className="btn-download-entourage" href="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Bel&Jeff-Wedding-Entourage.pdf" download>
           Download <br/>Entourage
         </a>
+
+        <div className='txt-entourage-title' />
+        
         <div className="guest-list-container">
           <div className="one-list">
             <h1 className="guest-title">
