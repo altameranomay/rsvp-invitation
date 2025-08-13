@@ -73,76 +73,89 @@ const Entourage = () => {
               Ms. Arlene V. Bote <br/>
             </p>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Best Man
-              {/* <img className="img-title" src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/parent.png' alt='Officiant'/> */}
-            </h1>
-            <p className="guest-name">Mr. Christopher M. Montevirgen</p>
+          <div className="two-list-guest">
+            <div className="one-list">
+              <h1 className="guest-title">
+                Best Man
+                {/* <img className="img-title" src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/parent.png' alt='Officiant'/> */}
+              </h1>
+              <p className="guest-name">Mr. Christopher M. Montevirgen</p>
+            </div>
+            <div className="one-list">
+              <h1 className="guest-title">
+                Maid of Honor
+              </h1>
+              <p className="guest-name">Ms. Ma. Angelica A. Roquiño</p>
+            </div>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Maid of Honor
-            </h1>
-            <p className="guest-name">Ms. Ma. Angelica A. Roquiño</p>
+
+          <div className="two-list-guest">
+            <div className="one-list">
+              <h1 className="guest-title">
+                Grooms Men
+              </h1>
+              <p className="guest-name">
+                Kurt Patrick Laja <br/>
+                John Derick Miranda <br/>
+                Jar-Ar L. Lasin <br/>
+                Isaiah Chayil Flancia <br/>
+              </p>
+            </div>
+            <div className="one-list">
+              <h1 className="guest-title">
+                Brides Maid
+              </h1>
+              <p className="guest-name">
+                Patricia Ann Santos <br/>
+                Alyssa Faye Garcia <br/>
+                Nerri Jen Geray <br/>
+                Trishna Sahie R. Santos <br/>
+              </p>
+            </div>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Grooms Men
-            </h1>
-            <p className="guest-name">
-              Kurt Patrick Laja <br/>
-              John Derick Miranda <br/>
-              Jar-Ar L. Lasin <br/>
-              Isaiah Chayil Flancia <br/>
-            </p>
+
+          <div className="two-list-guest">
+            <div className="one-list">
+              <h1 className="guest-title">
+                Little Groom
+              </h1>
+              <p className="guest-name">Khal Denver A. Valencia</p>
+            </div>
+            <div className="one-list">
+              <h1 className="guest-title">
+                Little Bride
+              </h1>
+              <p className="guest-name">Marcelyn Santos</p>
+            </div>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Brides Maid
-            </h1>
-            <p className="guest-name">
-              Patricia Ann Santos <br/>
-              Alyssa Faye Garcia <br/>
-              Nerri Jen Geray <br/>
-              Trishna Sahie R. Santos <br/>
-            </p>
-          </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Little Groom
-            </h1>
-            <p className="guest-name">Khal Denver A. Valencia</p>
-          </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Little Bride
-            </h1>
-            <p className="guest-name">Marcelyn Santos</p>
-          </div>
+
           <div className="one-list">
             <h1 className="guest-title">
               Secondary Sponsors
             </h1>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Candle
-            </h1>
-            <p className="guest-name">
-              Engr. Dianne M. Montevirgen <br/>
-              Engr. Jake D. Abang
-              </p>
+
+          <div className="two-list-guest">
+            <div className="one-list">
+              <h1 className="guest-title">
+                Candle
+              </h1>
+              <p className="guest-name">
+                Engr. Dianne M. Montevirgen <br/>
+                Engr. Jake D. Abang
+                </p>
+            </div>
+            <div className="one-list">
+              <h1 className="guest-title">
+                Cord
+              </h1>
+              <p className="guest-name">
+                Dra. Polina Y'vana N. Co <br/>
+                Ptr. Raymond M. Montevirgen
+                </p>
+            </div>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Cord
-            </h1>
-            <p className="guest-name">
-              Dra. Polina Y'vana N. Co <br/>
-              Ptr. Raymond M. Montevirgen
-              </p>
-          </div>
+
           <div className="one-list">
             <h1 className="guest-title">
               Viel
@@ -152,38 +165,45 @@ const Entourage = () => {
               Mr. John Joshua M. Lingon
               </p>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Ring Bearer
-            </h1>
-            <p className="guest-name">
-              Rakim Hadriel G. Sano
-            </p>
+
+          <div className="two-list-guest">
+            <div className="one-list">
+              <h1 className="guest-title">
+                Ring Bearer
+              </h1>
+              <p className="guest-name">
+                Rakim Hadriel G. Sano
+              </p>
+            </div>
+            <div className="one-list">
+              <h1 className="guest-title">
+                Bible
+              </h1>
+              <p className="guest-name">
+                Markus Malakai C. Acesor
+              </p>
+            </div>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Bible
-            </h1>
-            <p className="guest-name">
-              Markus Malakai C. Acesor
-            </p>
+
+          <div className="two-list-guest">
+            <div className="one-list">
+              <h1 className="guest-title">
+                Coin Bearer
+              </h1>
+              <p className="guest-name">
+                Alexander Bryann M. Gedaria
+              </p>
+            </div>
+            <div className="one-list">
+              <h1 className="guest-title">
+                Banner Bearer
+              </h1>
+              <p className="guest-name">
+                Johnriel Lucas M. Nañez
+              </p>
+            </div>
           </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Coin Bearer
-            </h1>
-            <p className="guest-name">
-              Alexander Bryann M. Gedaria
-            </p>
-          </div>
-          <div className="one-list">
-            <h1 className="guest-title">
-              Banner Bearer
-            </h1>
-            <p className="guest-name">
-              Johnriel Lucas M. Nañez
-            </p>
-          </div>
+
           <div className="one-list">
             <h1 className="guest-title">
               Flower Girls
