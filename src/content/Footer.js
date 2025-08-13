@@ -11,12 +11,12 @@ const Footer = () => {
         {isMobile ? (
         <>
         <div className="footer-images">
-          <img alt="footer mini 1" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG"/>
+          <img alt="footer mini 1" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-338.JPG"/>
           <img alt="footer mini 2" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG"/>
           <img alt="footer mini 3" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG"/>
           <img alt="footer mini 4" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-204.png"/>
-          <img alt="footer mini 5" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Jeffxbel-24.jpg"/>
-          <img alt="footer mini 6" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-018.JPG"/>
+          <img alt="footer mini 5" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-309.JPG"/>
+          <img alt="footer mini 6" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-381.png"/>
         </div>
         <img className='wedding-logo' src={process.env.PUBLIC_URL + imgLogo} alt="wedding "/>
         <hr/>
@@ -46,12 +46,12 @@ const Footer = () => {
         </>
         ) : (
         <div className="footer-images">
-          <img alt="footer min 1" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG"/>
+          <img alt="footer min 1" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-338.JPG"/>
           <img alt="footer  min 2" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG"/>
           <img alt="footer  min 3" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG"/>
           <img alt="footer  min 4" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-204.png"/>
-          <img alt="footer  min 5" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Jeffxbel-24.jpg"/>
-          <img alt="footer  min 6" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-018.JPG"/>
+          <img alt="footer  min 5" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-309.JPG"/>
+          <img alt="footer  min 6" src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-381.png"/>
         </div>
         
         )}

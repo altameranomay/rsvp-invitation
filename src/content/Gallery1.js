@@ -38,40 +38,41 @@ function Rtl() {
               <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Jeffxbel-24.jpg'/>
             </div>
             <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-010-1.jpg'/>
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-201.jpg'/>
             </div>
             <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG'/>
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-237.JPG'/>
             </div>
             <div className="img-slider-cont">
               <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-018.JPG'/>
             </div>
             <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG'/>
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-326.jpg'/>
             </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-076.JPG'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-204.png'/>
-            </div>
+            
        </Slider>
       ) : (
           <Slider {...settings}>
             <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-010-1.jpg'/>
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-326.jpg'/>
+            </div>
+            <div className="img-slider-cont">
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.jpg'/>
+            </div>
+            <div className="img-slider-cont">
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-204.png'/>
+            </div>
+            <div className="img-slider-cont">
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-201.jpg'/>
             </div>
             <div className="img-slider-cont">
               <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-381.png'/>
               </div>
             <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Jeffxbel-24.jpg'/>
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-258.JPG'/>
             </div>
             <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-196.JPG'/>
+              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-259.JPG'/>
             </div>
           </Slider>
         
