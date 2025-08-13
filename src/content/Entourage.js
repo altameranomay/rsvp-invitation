@@ -62,10 +62,10 @@ const Entourage = () => {
               Mrs. Jesusa P. Valdemar  <br/>
               Mrs. Eleonor A. Pendre  <br/>
               Ms. Marissa Picardal <br/>
-              Rev. Shella R. De Mesa  <br/>
+              Rev. Shella D. Rogas  <br/>
               Ms. Susan Mejia <br/>
               Mrs. Bobbi Girard <br/>
-              Ptra. Rose Laja <br/>
+              Ptra. Rose C. Pernites <br/>
               Mrs. Josephine T. Bonto <br/>
               Mrs. Maria Teresa A. Co <br/>
               Mrs. Cristina Pecha <br/>
