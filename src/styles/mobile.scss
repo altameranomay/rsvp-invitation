@@ -194,4 +194,23 @@
             width: 90%;
         }
     }
+    .entourage-container {
+        .entourage-background {
+            .txt-entourage-title {
+                width: 300px;
+                object-fit: contain;
+            }
+            .guest-list-container {
+                padding: 60px 0;
+                .one-list, .two-list {
+                    .guest-title {
+                        font-size: 16px;
+                    }
+                    .guest-name {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }

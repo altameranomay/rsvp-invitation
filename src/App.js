@@ -4,7 +4,6 @@ import './App.css';
 import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom"
 
 import ZoomImageOnScroll from './content/ZoomImageOnScroll';
-import HamburgerMenu from './content/HamburgerMenu';
 import Navigator from './content/Navigator';
 import Intro from './content/Intro';
 import OurStory from './content/OurStory';
@@ -12,7 +11,7 @@ import CountdownTimer from './content/CountdownTimer';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
 import Gift from './content/Gift';
-// import ZoomName from './content/ZoomName';
+import Entourage from './content/Entourage';
 import Mpplayer from './content/Mpplayer';
 import Location from './content/Location';
 
@@ -22,15 +21,14 @@ function App() {
     <div className="page-wrapper">
       <Router>
         <ZoomImageOnScroll/>
-        {/* <HamburgerMenu/> */}
         <Navigator/>
         <Intro/>
         <OurStory/>
         <CountdownTimer/>
+        <Entourage/>
         <Gallery/>
         <Gallery1/>
         <Gift/>
-        {/* <ZoomName/> */}
         <Mpplayer/>
         <Location/>
         <Routes>

@@ -1,5 +1,8 @@
 body {
     background-color: #e8e4dd;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform:translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
 }
 .page-wrapper, #root {
   width: 100%;
@@ -182,7 +185,7 @@ body {
     }
 }
 .navbar-light {
-    background-color: #0d1b21 !important;
+    background-color: #002a1e !important;
     .-mobile {
         display: none;
         img {
@@ -517,7 +520,7 @@ body {
     overflow-x: hidden;
     .gift-img {
         width: 500px;
-        height: 350px;
+        height: 450px;
         object-fit: cover;
     }
     .text-gift-container {
@@ -549,7 +552,7 @@ body {
             position: absolute;
         }
         .btn-copy-number {
-            background-color: #0d1b21;
+            background-color: #002a1e;
             color: #ebe9bf;
             font-family: 'Antic Didone';
             font-weight: 600;
@@ -559,7 +562,7 @@ body {
             width: 50px;
             &:active, &:hover, &:visited, &:focus, &:target {
                 color: #ebe9bf;
-                background-color: #1e353f;
+                background-color: #011f17;
             }
         }
         .bank-cover {
@@ -590,6 +593,102 @@ body {
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: row;
+        }
+    }
+}
+.entourage-container {
+    position: relative;
+    .entourage-background {
+        text-align: center;
+        /**mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 0%, transparent 200%);*/
+        .txt-entourage-title {
+            width: 500px;
+            height: 140px;
+            margin: 0 auto 0 auto;
+            position: relative;
+            transform: translate(50px, 50px);
+            object-fit: contain;
+        }
+        .btn-download-entourage {
+            position: sticky;
+            top: 100px;
+            right: 20px;
+            color: #f3f1c4 !important;
+            float: right;
+            background: #002a1e;
+            font-size: 12px;
+            text-transform: capitalize;
+            padding: 10px;
+            text-decoration: none !important;
+            &:hover,
+            &:active,
+            &:focus {
+                text-decoration: none !important;
+            }
+        }
+        .guest-list-container {
+            padding: 100px 0;
+            .two-list {
+                margin-bottom: 65px !important;
+                display: flex;
+                justify-content: space-evenly;
+                .guest-title {
+                    text-align: center;
+                    position: absolute !important;
+                }
+                .guest-name {
+                    margin-top: 25px;
+                }
+            }
+            .one-list, .two-list {
+                margin-bottom: 50px;
+                .guest-title {
+                    position:unset;
+                    font-family: 'Antic Didone';
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 12px;
+                    color: #698079 !important;
+                    text-transform: uppercase;
+                    margin: 0;
+                    /***.img-title {
+                        margin: 0 auto;
+                        transform: translate(0, 20px);
+                        width: 300px;
+                        height: 110px;
+                        object-fit: contain;
+                    }*/
+                }
+                .guest-name {
+                    font-family: 'Antic Didone';
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 18px;
+                    color: #002a1e !important;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    .flower {
+        height: 300px;
+        width: 500px;
+        background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/corner-flower.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &.top-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(90deg) translate(54px, 100px);
+            z-index: 1000;
+        }
+        &.bottom-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(270deg) translate(54px, 100px);
+            z-index: 1000;
         }
     }
 }

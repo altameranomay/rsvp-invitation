@@ -12,6 +12,7 @@ const Intro = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+      
       const newScales = imageRefs.current.map((img) => {
         if (!img) return 1;
 
