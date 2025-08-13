@@ -29,6 +29,7 @@ export default function Gift() {
       console.error("Copy failed:", err);
     }
   };
+
   return (
         <div className="gift-container" id="gift">
           <div className="text-gift-container"

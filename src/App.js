@@ -26,9 +26,9 @@ function App() {
         <OurStory/>
         <CountdownTimer/>
         <Entourage/>
+        <Gift/>
         <Gallery/>
         <Gallery1/>
-        <Gift/>
         <Mpplayer/>
         <Location/>
         <Routes>
