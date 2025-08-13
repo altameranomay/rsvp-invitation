@@ -44,7 +44,7 @@ const Entourage = () => {
             </h1>
             <p className="guest-name">
               Dr. Edilberto & Dang Hermosa <br/>
-              Bishop Carding Sio <br/>
+              Bishop Ricardo Sio <br/>
               Bishop Tony Marioghae <br/>
               P/Col. Romulo Albacea <br/>
               Mr. Leo Trofeo Macariola <br/>
