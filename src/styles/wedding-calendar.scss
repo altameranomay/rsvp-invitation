@@ -1,0 +1,82 @@
+.wedding-calendar {
+  background: #1b3b24;
+  padding: 100px 0;
+  pointer-events: none;
+}
+.react-calendar {
+  border: 0 !important;
+  margin: 0 auto;
+  width: auto !important;
+  min-width: 300px;
+  max-width: 700px !important;
+  background: none !important;
+  * {
+    color: #fff;
+  }
+  .react-calendar__tile {
+    font-size: 0.8em;
+  }
+  .react-calendar__tile--active {
+    background: transparent;
+    background-image: url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/green-heart.png');
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 8px;
+    font-size: 1.2em;
+    abbr {
+      color: #fff;
+    }
+  }
+  .react-calendar__tile--active:enabled:hover, 
+  .react-calendar__tile--active:enabled:focus {
+    background: transparent;
+    background-image: url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/green-heart.png') !important;
+    background-size: 50px 50px !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 10px !important;
+    abbr {
+      color: #fff !important;
+    }
+  }
+
+  button {
+    height: 60px;
+  }
+  .react-calendar__tile:enabled:hover, 
+  .react-calendar__tile:enabled:focus{
+    background: transparent;
+    abbr {
+      color: #0d1b21;
+    }
+  }
+}
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: 'Antic Didone' !important;
+  font-size: 1.2em;
+}
+.react-calendar__navigation button:enabled:hover, 
+.react-calendar__navigation button:enabled:focus {
+  background: transparent !important;
+}
+.react-calendar__navigation button {
+  font-family: 'Antic Didone' !important;
+  color: rgb(64 119 79) !important;
+  font-size: 3em;
+}
+.react-calendar__navigation__label__labelText {
+  color: rgb(64 119 79) !important;
+  font-weight: 600;
+}
+.react-calendar__navigation__arrow {
+  display: none;
+}
+.react-calendar__navigation {
+  margin-bottom: 3em !important;
+  justify-content: center;
+  align-items: center;
+}

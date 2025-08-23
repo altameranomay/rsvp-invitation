@@ -7,16 +7,7 @@
         /**overflow-x: hidden !important;*/
         width: 100%;
     }
-    .image-container  {
-        height: 90vh;
-        .zoom-image {
-            height: 100vh;
-            width: auto;
-        }
-        &.-right {
-            padding-right: 0;
-        }
-    }
+
     .navbar-light {
         align-items: flex-start;
         width: 100%;
@@ -127,16 +118,6 @@
             }
         }
     }
-    .our-story-container {
-        padding: 80px 30px 50px 30px;
-        text-align: center;
-        h5 {
-            margin-bottom: 40px;
-        }
-        p {
-            text-align: justify;
-        }
-    }
     .location-container {
         padding: 0;
         .reception-container {
@@ -151,33 +132,6 @@
                 padding: 50px !important;
             }
         }
-    }
-    .countdown-container {
-        .spn-save-date {
-            &::before {
-                content: '';
-                position: absolute;
-                top: 35px;
-                left: -60px;
-                width: 50px;
-                height: 1px;
-                background-color: #d0a146;
-            }
-            &::after {
-                content: '';
-                position: absolute;
-                top: 35px;
-                right: -60px;
-                width: 50px;
-                height: 1px;
-                background-color: #d0a146;
-            }
-            .save-date {
-                height: 70px !important;
-            }
-        }
-
-
     }
     .gift-container {
         max-width: 100%;

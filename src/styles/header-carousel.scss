@@ -1,0 +1,161 @@
+
+  .one-slider {
+    .img-one-slider {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+    }
+    &.slick-slider {
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+    .slick-dots {
+      bottom: unset;
+      top: 0;
+      right: 0;
+      transform: translate(47%, 300px) rotate(90deg);
+      z-index: 1;
+      li {
+        list-style: none;
+        margin: 0 15px;
+        &.slick-active {
+          button {
+            &::before{
+              background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/heart.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+              font-family: unset;
+              font-size: 0;
+            }
+          }
+        }
+        button {
+          &::before{
+            background-image: url("https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/border-heart.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: unset;
+            font-size: 0;
+            transform: rotate(270deg);
+          }
+        }
+      }
+    }
+  }
+  .slider-text-container {
+    position: absolute;
+    width: 100%;
+    &#title-0, &#title-1,&#title-2, &#title-3, &#title-4 {
+      height: auto;
+      transform: translate(300px, 300px);
+      top:0;
+      max-width: 500px;
+    }
+    h2 {
+      font-family: 'Wonder Garden Sans Serif',serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 0.2;
+      color: #ffffff;
+      -webkit-font-smoothing:antialiased;
+      letter-spacing: 2px;
+    } 
+    p {
+      font-family: 'Wonder Garden Sans Serif';
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #ffffff;
+      -webkit-font-smoothing: subpixel-antialiased;
+      letter-spacing: 3px;
+    }
+  }
+
+.slick-slider {
+  height: 100vh;
+  div {
+    height: 100vh;
+  }
+  .slick-next, .slick-prev {
+    display: none !important;
+  }
+  img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 30%;
+    /**-webkit-mask-image: linear-gradient(to bottom, #002a1e 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #002a1e 80%, transparent 100%);*/
+  }
+}
+@media (max-width:801px) { 
+
+  .one-slider {
+    .slick-dots {
+      bottom: unset;
+      top: 0;
+      right: 0;
+      transform: translate(43%, 350px) rotate(90deg);
+      z-index: 1;
+    }
+  }
+  .slider-text-container {
+    &#title-0, &#title-2, &#title-3, &#title-4 {
+      height: auto;
+      transform: translate(50px, 400px);
+      top:0;
+      max-width: 300px;
+      p {
+        line-height: 1.2;
+      }
+      h2 {
+        margin-bottom: 25px;
+      }
+    }
+    &#title-1 {
+      height: auto;
+      transform: translate(50px, 50px);
+      top:0;
+      max-width: 300px;
+      p {
+        font-size: 14px;
+      }
+      h2 {
+        margin-bottom: 25px;
+      }
+    }
+    &#title-2 {
+      height: auto;
+      transform: translate(50px, 450px);
+      top:0;
+      max-width: 300px;
+      p {
+        line-height: 1.2;
+      }
+      h2 {
+        margin-bottom: 25px;
+      }
+    }
+    &#title-3 {
+      height: auto;
+      transform: translate(50px, 100px);
+      top:0;
+      max-width: 300px;
+      p {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+      h2 {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .slick-slider {
+    img {
+      object-position: unset !important;
+    }
+  }
+}

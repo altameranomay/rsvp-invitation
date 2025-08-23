@@ -1,228 +1,39 @@
+const imgLogo = '/images/wedding-logo.png'
+
 const Entourage = () => {
   return (
       <div className="entourage-container" id="entourage">
-        <div className="flower top-left"/>
-        <div
-        className="relative entourage-background"
-        style={{
-          backgroundImage: "url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/entourage-background-1.jpg')",
-          backgroundAttachment: "fixed",
-          minHeight:"100vh",
-          width: "100%",
-          backgroundSize: "contain",
-          backgroundRepeat:"repeat" // keeps background static
-        }}
-      >
-        <a className="btn-download-entourage" href="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Bel&Jeff-Wedding-Entourage.pdf" download>
-          Download <br/>Entourage
-        </a>
-
-        <div className='txt-entourage-title' />
         
-        <div className="guest-list-container">
-          <div className="one-list">
-            <h1 className="guest-title">
-              Officiant
-            </h1>
-            <p className="guest-name">Bishop Robert Isles</p>
+        <h1 className="title"> Entourage</h1>
+        <p className="text"> Click download for the copy of the list of the wedding invities,
+        what you are seeing are the soft copy of the Invitation list itself.</p>
+        <a className="btn-download-entourage" href="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Bel&Jeff-Wedding-Entourage.pdf" download>
+          Download Entourage
+        </a>
+        <div className="invitation-container">
+          <div className="logo">
+            <img alt='wedding logo' className="wedd-logo" src={process.env.PUBLIC_URL + imgLogo}/>
           </div>
-          <div className="two-list">
-            <h1 className="guest-title">
-              Parents
-            </h1>
-            <p className="guest-name">
-              Mrs. Ruby Joy M. Montevirgen <br/> 
-              Mr. Luisito C. Montevirgen <br/>
-            </p>
-            <p className="guest-name">
-              Dra. Amelia C. Altamerano <br/>
-              Mr. Edwin B. Picardal
-            </p>
-          </div>
-          <div className="two-list">
-            <h1 className="guest-title">
-              Principal Sponsors
-            </h1>
-            <p className="guest-name">
-              Dr. Edilberto & Dang Hermosa <br/>
-              Bishop Ricardo Sio <br/>
-              Bishop Tony Marioghae <br/>
-              P/Col. Romulo Albacea <br/>
-              Mr. Leo Trofeo Macariola <br/>
-              Bishop Adonis Acuna <br/>
-              Engr. Orly Pernites <br/>
-              Ptr Ram Mercado <br/>
-              Engr. Ernesto & Lea Padillo <br/>
-              Mr. Arcadio Altamerano  <br/>
-              Bishop Romeo P. Valle <br/>
-              Ptr. Jessie S. Sucaldito  <br/>
-            </p>
-            <p className="guest-name">
-              Mrs. Liza C Chiu <br/>
-              Mrs. Isabel V. Hillerstam <br/> 
-              Mrs. Jesusa P. Valdemar  <br/>
-              Mrs. Eleonor A. Pendre  <br/>
-              Ms. Marissa Picardal <br/>
-              Rev. Shella D. Rogas  <br/>
-              Ms. Susan Mejia <br/>
-              Mrs. Bobbi Girard <br/>
-              Ptra. Rose C. Pernites <br/>
-              Mrs. Josephine T. Bonto <br/>
-              Mrs. Maria Teresa A. Co <br/>
-              Mrs. Cristina Pecha <br/>
-              Mrs. Maria Elena I. Ramirez <br/>
-              Ms. Arlene V. Bote <br/>
-            </p>
-          </div>
-          <div className="two-list-guest">
-            <div className="one-list">
-              <h1 className="guest-title">
-                Best Man
-                {/* <img className="img-title" src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/parent.png' alt='Officiant'/> */}
-              </h1>
-              <p className="guest-name">Mr. Christopher M. Montevirgen</p>
-            </div>
-            <div className="one-list">
-              <h1 className="guest-title">
-                Maid of Honor
-              </h1>
-              <p className="guest-name">Ms. Ma. Angelica A. Roquiño</p>
-            </div>
-          </div>
-
-          <div className="two-list-guest">
-            <div className="one-list">
-              <h1 className="guest-title">
-                Grooms Men
-              </h1>
-              <p className="guest-name">
-                Kurt Patrick Laja <br/>
-                John Derick Miranda <br/>
-                Jar-Ar L. Lasin <br/>
-                Isaiah Chayil Flancia <br/>
-              </p>
-            </div>
-            <div className="one-list">
-              <h1 className="guest-title">
-                Brides Maid
-              </h1>
-              <p className="guest-name">
-                Patricia Ann Santos <br/>
-                Alyssa Faye Garcia <br/>
-                Nerri Jen Geray <br/>
-                Trishna Sahie R. Santos <br/>
-              </p>
-            </div>
-          </div>
-
-          <div className="two-list-guest">
-            <div className="one-list">
-              <h1 className="guest-title">
-                Little Groom
-              </h1>
-              <p className="guest-name">Khal Denver A. Valencia</p>
-            </div>
-            <div className="one-list">
-              <h1 className="guest-title">
-                Little Bride
-              </h1>
-              <p className="guest-name">Marcelyn Santos</p>
-            </div>
-          </div>
-
-          <div className="one-list">
-            <h1 className="guest-title">
-              Secondary Sponsors
-            </h1>
-          </div>
-
-          <div className="two-list-guest">
-            <div className="one-list">
-              <h1 className="guest-title">
-                Candle
-              </h1>
-              <p className="guest-name">
-                Engr. Dianne M. Montevirgen <br/>
-                Engr. Jake D. Abang
-                </p>
-            </div>
-            <div className="one-list">
-              <h1 className="guest-title">
-                Cord
-              </h1>
-              <p className="guest-name">
-                Dra. Polina Y'vana N. Co <br/>
-                Ptr. Raymond M. Montevirgen
-                </p>
-            </div>
-          </div>
-
-          <div className="one-list">
-            <h1 className="guest-title">
-              Viel
-            </h1>
-            <p className="guest-name">
-              Ms. Clarisse Pendre <br/>
-              Mr. John Joshua M. Lingon
-              </p>
-          </div>
-
-          <div className="two-list-guest">
-            <div className="one-list">
-              <h1 className="guest-title">
-                Ring Bearer
-              </h1>
-              <p className="guest-name">
-                Rakim Hadriel G. Sano
-              </p>
-            </div>
-            <div className="one-list">
-              <h1 className="guest-title">
-                Bible
-              </h1>
-              <p className="guest-name">
-                Markus Malakai C. Acesor
-              </p>
-            </div>
-          </div>
-
-          <div className="two-list-guest">
-            <div className="one-list">
-              <h1 className="guest-title">
-                Coin Bearer
-              </h1>
-              <p className="guest-name">
-                Alexander Bryann M. Gedaria
-              </p>
-            </div>
-            <div className="one-list">
-              <h1 className="guest-title">
-                Banner Bearer
-              </h1>
-              <p className="guest-name">
-                Johnriel Lucas M. Nañez
-              </p>
-            </div>
-          </div>
-
-          <div className="one-list">
-            <h1 className="guest-title">
-              Flower Girls
-            </h1>
-            <p className="guest-name">
-              Raquena Haniah G. Sano <br/>
-              Atarah Ashmin Asesor <br/>
-              Faye Andrea G. Montevirgen <br/>
-              Zhekainnah Nueva
-            </p>
+          
+          <img alt='bridal entourage' src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/bridal-entourage.jpg"/>
+          <img alt='secondary sponsor' src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/secondary-sponsor.jpg"/>
+        
+          <div className="white-flower"/>
+        </div>
+        <div className="invitation-container">
+           <div className="white-flower two"/>
+          <img alt='attire' src="https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/attire.jpeg" className="attire"/>
+          <div className="palette">
+            <span className="cream"/>
+            <span className="bitter"/>
+            <span className="forest-green"/>
+            <span className="deep-forest-green"/>
           </div>
         </div>
+        <p className="text"> Love is patient, love is kind. It does not envy, it does not boast, it is not proud.  
+          It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. Love does not delight in evil but rejoices with the truth. It always protects, always trusts, always hopes, always perseveres. -1 Corinthians 13:4-7
+        </p>
       </div>
-
-      <div className="ent-girl bottom-left"/>
-      <div className="ent-boy bottom-left"/>
-      <div className="flower bottom-right"/>
-    </div>
     )
 }
 

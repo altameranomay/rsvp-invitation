@@ -26,57 +26,86 @@ export default function Gallery() {
     cssEase: "linear"
   };
 
+  const galleryMobile = [
+    { id:'1', 
+      alt: "wedding photo 1", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.jpg" 
+    },
+    { id:'2', 
+      alt: "wedding photo 2", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG" 
+    },
+    { id:'3', 
+      alt: "wedding photo 3", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG" 
+    },
+    { id:'4', 
+      alt: "wedding photo 4", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-028.JPG" 
+    },
+    { id:'5', 
+      alt: "wedding photo 5", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-020.JPG" 
+    },
+  ];
+
+  const galleryWeb = [
+    { id:'1', 
+      alt: "wedding photo 1", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-381.png" 
+    },
+    { id:'2', 
+      alt: "wedding photo 2", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-309.JPG" 
+    },
+    { id:'3', 
+      alt: "wedding photo 3", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-039.JPG" 
+    },
+    { id:'4', 
+      alt: "wedding photo 4", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Jeffxbel-24.jpg" 
+    },
+    { id:'5', 
+      alt: "wedding photo 5", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-018.JPG" 
+    },
+    { id:'6', 
+      alt: "wedding photo 6", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG" 
+    },
+    { id:'7', 
+      alt: "wedding photo 7", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-020.JPG" 
+    },
+    { id:'8', 
+      alt: "wedding photo 8", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG" 
+    },
+    { id:'9', 
+      alt: "wedding photo 9", 
+      src: "https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-028.JPG" 
+    },
+  ];
+
   return (
     <div className="slider-container" id="gallery">
       {isMobile ? (
         <Slider {...settingsMob}>
-          <div className="img-slider-cont">
-            <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.jpg'/>
-          </div>
-          <div className="img-slider-cont">
-            <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG'/>
-          </div>
-          <div className="img-slider-cont">
-            <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-014.JPG'/>
-          </div>
-          <div className="img-slider-cont">
-            <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-028.JPG'/>
-          </div>
-          <div className="img-slider-cont">
-            <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-020.JPG'/>
-          </div>
-       </Slider>
+          {galleryMobile.map((imgs) => (
+            <div className="img-slider-cont" id={imgs.id}>
+              <img  alt={imgs.alt} src={imgs.src}/>
+            </div>
+          ))}
+        </Slider>
       ) : (
-          <Slider {...settings}>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-381.png'/>
+        <Slider {...settings}>
+          {galleryWeb.map((imgs) => (
+            <div className="img-slider-cont" id={imgs.id}>
+              <img  alt={imgs.alt} src={imgs.src}/>
             </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-309.JPG'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-039.JPG'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/Jeffxbel-24.jpg'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-018.JPG'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-031.JPG'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-020.JPG'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-083.JPG'/>
-            </div>
-            <div className="img-slider-cont">
-              <img alt='gallery' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-028.JPG'/>
-            </div>
-             
-          </Slider>
+          ))} 
+        </Slider>
         
       )}
     </div>

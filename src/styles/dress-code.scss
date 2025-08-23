@@ -1,0 +1,66 @@
+.dresscode-container {
+  position: relative;
+  background-color: #1b3b24;
+  padding: 100px 0;
+  overflow: hidden;
+  border-top: 1px solid #15301c;
+  h1 {
+    &.title {
+      position:unset;
+      font-family: 'Antic Didone';
+      font-weight: 600;
+      font-style: normal;
+      font-size: 3em;
+      color: rgb(64 119 79);
+      margin: 0 auto 50px auto;
+      text-align: center;
+      max-width: 900px;
+    }
+  }
+  p {
+    &.text {
+      font-family: 'Antic Didone';
+      color: #b3d4bc;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 1.8;
+      &:nth-child(2) {
+        max-width: 600px;
+        text-align: center;
+        color: #fff;
+        margin-top: 0;
+      }
+    }
+  }
+  .invitation-container {
+    background-color: #20432a;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    img {
+      height: 400px;
+      object-fit: contain;
+      margin: 0 auto;
+      box-shadow: 5px 8px #15301c;
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+    .white-flower {
+      height: 300px;
+      width: 300px;
+      overflow: hidden;
+      background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/real-flower.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translate(0%, 17%) rotate(280deg);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

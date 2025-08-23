@@ -1,0 +1,26 @@
+.slider-container {
+  height:50vh;
+  margin-bottom: 5px;
+  .slick-slider {
+    height: 50vh;
+    div {
+      height: 50vh;
+    }
+  }
+  .slick-slide {
+    height: 50vh;
+    overflow: hidden;
+    width: 250px !important;
+  }
+  img {
+    height: 50vh;
+    width: 98%;
+    object-fit: cover;
+  }
+  .slick-dots {
+    display: none !important;
+  }
+  .slick-arrow {
+    display: none !important;    
+  }
+}

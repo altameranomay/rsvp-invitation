@@ -1,4 +1,18 @@
 @font-face {
+  font-family: 'Wonder Garden Script';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  src: url('/public/font/WonderGardenScript-Regular.woff') format('woff'),url('/public/font/WonderGardenScript-Regular.woff2') format('woff2'), url('/public/font/WonderGardenScript-Regular.ttf') format('ttf'), url('/public/font/WonderGardenScript-Regular.eot') format('eot')
+}
+@font-face {
+  font-family: 'Wonder Garden Sans Serif';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  src: url('/public/font/WonderGardenSansRegular-Regular.woff') format('woff'),url('/public/font/WonderGardenSansRegular-Regular.woff2') format('woff2'), url('/public/font/WonderGardenSansRegular-Regular.ttf') format('ttf'), url('/public/font/WonderGardenSansRegular-Regular.eot') format('eot')
+}
+@font-face {
   font-family: 'Woodley';
   font-style: normal;
   font-weight: normal;

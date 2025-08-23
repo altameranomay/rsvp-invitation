@@ -1,6 +1,15 @@
 @import './styles/global.scss';
 @import './styles/styles.scss';
 @import './styles/mobile.scss';
+@import './styles/header-carousel.scss';
+@import './styles/intro.scss';
+@import './styles/rsvp.scss';
+@import './styles/our-story.scss';
+@import './styles/still-image.scss';
+@import './styles/wedding-calendar.scss';
+@import './styles/countdown.scss';
+@import './styles/entourage.scss';
+@import './styles/photo-slider.scss';
 
 
 

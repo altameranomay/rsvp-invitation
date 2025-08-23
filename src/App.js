@@ -1,15 +1,18 @@
-import AOS from 'aos';
+// import AOS from 'aos';
 // import Slider from "react-slick";
+import { useState } from 'react';
 import './App.css';
+import 'react-calendar/dist/Calendar.css';
 import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom"
+import Calendar from 'react-calendar';
 
-import ZoomImageOnScroll from './content/ZoomImageOnScroll';
-import Navigator from './content/Navigator';
+import Carousel from './content/Carousel';
+import Rsvp from './content/Rsvp';
 import Intro from './content/Intro';
+import StillImage from './content/StillImage';
 import OurStory from './content/OurStory';
 import CountdownTimer from './content/CountdownTimer';
 import Entourage from './content/Entourage';
-import DressCode from './content/DressCode';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
 import Gift from './content/Gift';
@@ -17,17 +20,27 @@ import Mpplayer from './content/Mpplayer';
 import Footer from './content/Footer';
 
 function App() {
-  AOS.init();
+  // AOS.init();
+  const [value, onChange] = useState(new Date(2025, 9, 25));
   return (
     <div className="page-wrapper">
       <Router>
-        <ZoomImageOnScroll/>
-        <Navigator/>
+        <Carousel/>
+        <Rsvp/>
         <Intro/>
+        
         <OurStory/>
+        <StillImage/>
+        <div
+          className='wedding-calendar'
+        >
+          <Calendar
+            onChange={onChange} // Callback for when a date is selected
+            value={value} // Current selected date(s)
+          />
+        </div>
         <CountdownTimer/>
         <Entourage/>
-        <DressCode/>
         <Gift/>
         <Gallery/>
         <Gallery1/>

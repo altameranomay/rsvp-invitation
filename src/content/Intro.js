@@ -38,20 +38,20 @@ const Intro = () => {
 
   return (
       <div className="intro image-container -right" id='our-story'>
-      
         {images.map((src, index) => (
           // eslint-disable-next-line
+          
           <img
             key={index}
             ref={(el) => (imageRefs.current[index] = el)}
             src={src}
-            alt={`Zoom Image ${index}`}
+            alt='prenup'
             className="zoom-image"
             style={{ transform: `scale(${scales[index]})` }}
           />
         ))}
         <div className='img-oblique-container'>
-            <img alt='' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-010-1.jpg'/>
+            <img alt='prenup' src='https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/prenup-edited-010-1.jpg'/>
         </div>
       </div>
   );

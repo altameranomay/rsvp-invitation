@@ -1,0 +1,118 @@
+.rsvp-container {
+  overflow: hidden;
+  position: relative;
+  background: #1b3b24;
+  padding: 200px 0;
+  .fixed-img {
+    /***/ 
+    background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/flower-1.png');
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    z-index: -1;
+    overflow: hidden;
+    transform: translate(-68%, 0) rotate(287deg);
+  }
+  .fixed-img.two {
+    background-image:url('https://raw.githubusercontent.com/tabiblia/images/refs/heads/main/white-flower-1.png');
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    right:0;
+    z-index: -1;
+    overflow: hidden;
+    transform: translate(13%, 195%) rotate(
+      269deg);
+  }
+  h1 {
+    &.title {
+      font-family: 'Antic Didone';
+      font-size: 24em;
+      text-align: center;
+      color: rgb(19 50 28 / 70%);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: translate(0%, 6%);
+      z-index: 0;
+    }
+  }
+  p.text {
+    color: #fff;
+    text-align: center;
+    font-family: 'Avenir Light';
+    font-size: 18px;
+    display: block;
+    position: relative;
+    z-index: 100;
+  }
+  .RSVP-link {
+    display: block;
+    color: #fff;
+    font-family: 'Wonder Garden Sans Serif', serif;
+    background-color: #002a1e;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    padding: 15px 35px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+  }
+  .bounce {
+    animation: bounce 1s ease-in-out infinite;
+    transition: transform 1s ease;
+  }
+  
+  .bounce:hover {
+    transform: scale(1.00);
+  }
+  
+  .bounce:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@media (max-width:801px) { 
+  .rsvp-container {
+    padding: 300px 0;
+    h1 {
+      &.title {
+        &.mob {
+          font-size: 24em;
+          line-height: 0.8;
+          text-align: center;
+          color: rgba(20, 55, 30, 0.7);
+          transform: translate(-7%, 8%);
+          z-index: 0;
+        }
+      }
+    }
+    p.text {
+      z-index: 100;
+      display: block;
+      position: relative;
+    }
+  }
+}

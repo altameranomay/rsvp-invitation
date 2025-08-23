@@ -57,7 +57,7 @@ const Footer = () => {
         )}
 
         <div className="bottom">
-          <p>© 2025 Bel & Jeff Wedding | Privacy Policy | Designed by Emotional Inspiration</p>
+          <p>© 2025 Bel & Jeff Wedding | Privacy Policy | Designed by Bel</p>
         </div>
       </div>
     )
