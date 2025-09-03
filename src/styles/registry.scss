@@ -1,0 +1,54 @@
+.registry-container {
+  position: relative;
+  background-color: #1b3b24;
+  padding: 100px 0;
+  overflow: hidden;
+  h1 {
+    &.title {
+      position:unset;
+      font-family: 'Antic Didone';
+      font-weight: 600;
+      font-style: normal;
+      font-size: 3em;
+      color: rgb(255, 255, 255);
+      margin: 0 auto 50px auto;
+      text-align: center;
+      max-width: 900px;
+    }
+  }
+  p {
+    &.text {
+      font-family: 'Avenir Light';
+      color: #b3d4bc;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 14px;
+      margin-top: 10px;
+      line-height: 1.8;
+      font-weight: light;
+      &:nth-child(2) {
+        max-width: 600px;
+        text-align: center;
+        color: #fff;
+        margin-top: 0;
+      }
+    }
+  }
+  .invitation-container {
+    background-color: #20432a;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+  }
+  @media (max-width:801px) {  
+    p {
+      &.text {
+        padding: 0 50px;
+        text-align: justify;
+      }
+    }
+  }
+}

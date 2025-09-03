@@ -1,0 +1,125 @@
+.itinerary-container {
+  position: relative;
+  background-color: #1b3b24;
+  padding: 100px 0;
+  overflow: hidden;
+  h1 {
+    &.title {
+      position:unset;
+      font-family: 'Antic Didone';
+      font-weight: 600;
+      font-style: normal;
+      font-size: 3em;
+      color: rgb(255, 255, 255);
+      margin: 0 auto 50px auto;
+      text-align: center;
+      max-width: 900px;
+      word-break: break-all;
+    }
+  }
+  p {
+    &.text {
+      font-family: 'Avenir Light';
+      color: #b3d4bc;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: justify;
+      font-size: 14px;
+      margin-top: 10px;
+      line-height: 1.8;
+      font-weight: light;
+      &:nth-child(2) {
+        max-width: 600px;
+        text-align: center;
+        color: #fff;
+        margin-top: 0;
+      }
+    }
+  }
+  .itinerary-list {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #20432a;
+    padding: 50px 0;
+    .itinerary-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        img {
+          object-position: left;
+        }
+        .text {
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+      }
+      &:nth-child(1){
+        .divider {
+          height: 56px;
+          transform: translate(0, 22px);
+          &::before {
+            transform: translate(-3.5px, 0);
+          }
+        }
+      }
+      &:nth-last-child(1){
+        .divider {
+          height: 56px;
+          transform: translate(0, -22px);
+          &::before {
+            transform: translate(-3.5px, 0);
+            top: unset;
+            bottom: 0;
+          }
+        }
+      }
+      img {
+        width: 200px;
+        height: 100px;
+        object-fit: contain;
+        object-position: right;
+      }
+      .divider {
+        height: 150px;
+        width: 1px;
+        background: #ffffff7d;
+        margin: 0 50px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          height: 8px;
+          width: 8px;
+          background: #fff;
+          border-radius: 100px;
+          transform: translate(-3.5px, 69px);
+        }
+      }
+      .text {
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 200px;
+        time {
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          font-family: 'Antic Didone';
+        }
+        span {
+          letter-spacing: 2px;
+          font-family: 'Antic Didone';
+          font-weight: 600;
+          color: #fff;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@ import StillImage from './content/StillImage';
 import OurStory from './content/OurStory';
 import CountdownTimer from './content/CountdownTimer';
 import Entourage from './content/Entourage';
+import Itinerary from './content/Itinerary';
 import Gallery from './content/Gallery';
 import Gallery1 from './content/Gallery1';
 import Gift from './content/Gift';
@@ -28,7 +29,6 @@ function App() {
         <Carousel/>
         <Rsvp/>
         <Intro/>
-        
         <OurStory/>
         <StillImage/>
         <div
@@ -41,9 +41,10 @@ function App() {
         </div>
         <CountdownTimer/>
         <Entourage/>
-        <Gift/>
+        <Itinerary/>
         <Gallery/>
         <Gallery1/>
+        <Gift/>
         <Mpplayer/>
         <Footer/>
         <Routes>
