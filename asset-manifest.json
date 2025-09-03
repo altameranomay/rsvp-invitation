@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rsvp-invitation/static/css/main.7a49b310.css",
-    "main.js": "/rsvp-invitation/static/js/main.44483d3e.js",
+    "main.css": "/rsvp-invitation/static/css/main.13ab5412.css",
+    "main.js": "/rsvp-invitation/static/js/main.d5f46663.js",
     "static/media/Woodley.otf": "/rsvp-invitation/static/media/Woodley.ab9a55312c8c33ce6db8.otf",
     "static/media/WonderGardenScript-Regular.eot": "/rsvp-invitation/static/media/WonderGardenScript-Regular.df783ac4b685a4312b1c.eot",
     "static/media/WonderGardenScript-Regular.ttf": "/rsvp-invitation/static/media/WonderGardenScript-Regular.a828455e7c42b1d7b6ea.ttf",
@@ -16,11 +16,11 @@
     "static/media/WonderGardenSansRegular-Regular.woff": "/rsvp-invitation/static/media/WonderGardenSansRegular-Regular.73f6159b0078d9dad612.woff",
     "static/media/WonderGardenSansRegular-Regular.woff2": "/rsvp-invitation/static/media/WonderGardenSansRegular-Regular.2335119addb8853f5051.woff2",
     "index.html": "/rsvp-invitation/index.html",
-    "main.7a49b310.css.map": "/rsvp-invitation/static/css/main.7a49b310.css.map",
-    "main.44483d3e.js.map": "/rsvp-invitation/static/js/main.44483d3e.js.map"
+    "main.13ab5412.css.map": "/rsvp-invitation/static/css/main.13ab5412.css.map",
+    "main.d5f46663.js.map": "/rsvp-invitation/static/js/main.d5f46663.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a49b310.css",
-    "static/js/main.44483d3e.js"
+    "static/css/main.13ab5412.css",
+    "static/js/main.d5f46663.js"
   ]
 }
