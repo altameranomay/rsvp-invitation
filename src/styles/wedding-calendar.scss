@@ -50,6 +50,9 @@
     }
   }
 }
+.react-calendar__tile--now {
+  background:#002617 !important;
+}
 .react-calendar__month-view__weekdays__weekday {
   padding: 0.5em;
   height: 50px;
